@@ -1,0 +1,102 @@
+/* Fronts from Google Fonts @ https://fonts.google.com */
+@import url('');
+
+/* Shortcuts for colors and fonts */
+:root {
+/* Colors */
+    --primary: ;
+    --secondary: ;
+    --accent1: ;
+    --accent2: ;
+    --background: lightgray;
+    --italicized: lightgray;
+/* Fonts */
+    --heading-font: ;
+    --paragraph-font: ;
+}
+
+/* Universal CSS Properties */
+.content {
+    background-color: white;
+    max-width: 500px;
+    min-width: 360px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+header {
+}
+
+body {
+    background-color: var(--background); 
+    color:black;
+}
+
+footer {
+}
+
+h1 {
+    font-size: 24px;
+}
+
+i {
+    color: var(--italicized);
+}
+/* index.html CSS Properties */
+.index-grid {
+    padding: 0px 32px 16px 32px;
+}
+
+.index-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: lightskyblue;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.index-student-picture {
+    grid-column: 1/2;
+    width: 90%;
+}
+
+.index-student-name {
+    grid-column: 2/3;
+}
+
+.index-list {
+    list-style: none;
+}
+
+.index-footer {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: lightskyblue;
+    border-radius: 8px;
+    padding: 4px;
+    text-align: center;
+}
+
+.copy {
+    grid-row: 1/2;
+}
+
+.last-updated {
+    grid-row: 2/3;
+}
+
+/* Mobile Display */
+@media screen and (max-width: 550px) {
+    .content {
+        padding: 0px;
+    }
+
+    .index-grid {
+        display: block;
+    }
+    .index-header, .index-footer {
+        padding: 8px 16px 8px 16px;
+        border-radius: 0px;
+    }
+}
