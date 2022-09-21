@@ -1,47 +1,80 @@
 /* Fronts from Google Fonts @ https://fonts.google.com */
-@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto+Slab:wght@200;800&family=Roboto:ital@0;1&display=swap" rel="stylesheet');
 
 /* Shortcuts for colors and fonts */
 :root {
 /* Colors */
-    --primary: ;
-    --secondary: ;
-    --accent1: ;
-    --accent2: ;
-    --background: lightgray;
-    --italicized: lightgray;
+    --primary: #0B132B;
+    --secondary: #30C5DC;
+    --accent1: #243054;
+    --accent2: #E62D3F;
+
+    --font-light: #FCFFFC;
+    --font-dark: #0B132B;
+
+    --background: #FCFFFC;
+    --shadow: #030303;
+    --italicized: #888888;
 /* Fonts */
-    --heading-font: ;
-    --paragraph-font: ;
+    --heading-font: 'Roboto Slab', georgia, serif;
+    --sub-font: 'Pathway Gothic One', tahoma, sans-serif;
+    --paragraph-font: 'Roboto', tahoma, sans-serif;
 }
 
 /* Universal CSS Properties */
-.content {
-    background-color: white;
-    max-width: 500px;
-    min-width: 360px;
-    margin: 0 auto;
-    padding: 16px;
-}
-
-header {
-}
-
 body {
-    background-color: var(--background); 
+    background-color: var(--accent1); 
     color:black;
 }
 
-footer {
+.content {
+    background-color: var(--background);
+    box-shadow: 0px 5px 10px 0px var(--shadow);
+    max-width: 500px;
+    min-width: 360px;
+    margin: 0 auto;
+    padding: 4px;
+    border-radius: 12px;
 }
 
-h1 {
+header, footer {
+    background-color: var(--primary);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: var(--secondary);
+    font-family: var(--heading-font);
+    font-weight: 800;
+    font-size: 1.7em;
+    letter-spacing: 1px;
+}
+
+p, div {
+    color: var(--font-dark);
+    font-family: var(--paragraph-font);
+    font-weight: 200;
+    font-size: 1em;
+}
+
+h4, h5, h6, li {
+    color: var(--font-dark);
+    font-family: var(--sub-font);
     font-size: 24px;
+    letter-spacing: 0px;
+    list-style: square;
 }
 
 i {
     color: var(--italicized);
 }
+
+hr {
+    border: 2px solid var(--accent2);
+    border-radius: 4px;
+}
+
 /* index.html CSS Properties */
 .index-grid {
     padding: 0px 32px 16px 32px;
@@ -49,41 +82,35 @@ i {
 
 .index-header {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: lightskyblue;
-    border-radius: 8px;
+    grid-template-columns: 1fr 1.6fr;
     padding: 10px;
-    text-align: center;
 }
 
 .index-student-picture {
     grid-column: 1/2;
     width: 90%;
+    border-radius: 4px;
 }
 
 .index-student-name {
     grid-column: 2/3;
-}
-
-.index-list {
-    list-style: none;
+    align-self: center;
+    margin-right: 10px;
 }
 
 .index-footer {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    background-color: lightskyblue;
-    border-radius: 8px;
-    padding: 4px;
-    text-align: center;
+    display: block;
+    padding: 8px;
 }
 
 .copy {
-    grid-row: 1/2;
+    color: var(--accent1);
+    margin-top: 0px;
 }
 
 .last-updated {
-    grid-row: 2/3;
+    color: var(--accent1);
+    margin-top: -10px;
 }
 
 /* Mobile Display */
@@ -95,8 +122,22 @@ i {
     .index-grid {
         display: block;
     }
-    .index-header, .index-footer {
-        padding: 8px 16px 8px 16px;
+
+    .index-header {
         border-radius: 0px;
+        padding: 0px;
+    }
+
+    .index-footer {
+        border-radius: 0px;
+    }
+
+    .index-student-picture {
+        border-radius: 0px;
+        width: 100%;
+    }
+    
+    .index-student-name {
+        margin: 10px;
     }
 }
