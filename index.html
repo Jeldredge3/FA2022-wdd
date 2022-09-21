@@ -7,13 +7,12 @@
     <meta name ="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles/style.css">
     <title>WDD 230 | Jordan Eldredge</title>
-    <script src="../scripts/script.js"></script>
 </head>
 <body>
 <div class="content">
     <!-- Picture of Self, Full Name-->
     <header class="index-header">
-        <img class="index-student-picture" src="../images/jme_picture.jpg">
+        <img class="index-student-picture" src="../images/jme_picture.jpg" alt="Picture of Author">
         <h1 class="index-student-name">Jordan M. Eldredge</h1>
     </header>
     <!-- Assignment Portal / Navigation -->
@@ -23,7 +22,7 @@
         <h1>WDD 230: Assignment Portal</h1>
         <hr>
         <ul class="index-list">
-            <li>Lesson 02: <i>N/A</i></li>
+            <li>Lesson 02: <a href="index.html">N/A</a></li>
             <li>Lesson 03: <i>N/A</i></li>
             <li>Lesson 04: <i>N/A</i></li>
             <li>Lesson 05: <i>N/A</i></li>
@@ -35,14 +34,17 @@
             <li>Lesson 11: <i>N/A</i></li>
         </ul>
         <hr>
-        <div id="index-closing-div">Web Frontend Development at BYU-I</div>
+        <div id="card"></div>
+        <div id="index-closing-div">Web Frontend Development at BYU-Idaho</div>
     </div>
     </main>
     <!-- Date, Name, State, Time Last Updated-->
     <footer class="index-footer">
         <p class="copy">&copy; 2022 | Jordan Eldredge | Utah</p>
-        <div class="last-updated">Last Updated: 09/20/2022 12:46 AM</div>
+        <p class="last-updated">Last Updated: <span id="update">09/20/2022 12:46 AM</span></p>
     </footer>
 </div>
 </body>
+<script src="../scripts/script.js"></script>
+
 </html>
