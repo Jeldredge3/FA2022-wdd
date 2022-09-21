@@ -75,6 +75,14 @@ hr {
     border-radius: 4px;
 }
 
+
+a:link { /* Unvisited link */
+    color: var(--secondary);
+}
+a:visited { /* Link when visited */
+    color: var(--accent2);
+}
+
 /* index.html CSS Properties */
 .index-grid {
     padding: 0px 32px 16px 32px;
@@ -105,12 +113,12 @@ hr {
 
 .copy {
     color: var(--accent1);
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 .last-updated {
     color: var(--accent1);
-    margin-top: -10px;
+    margin-top: 0px;
 }
 
 /* Mobile Display */
