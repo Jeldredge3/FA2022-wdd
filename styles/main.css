@@ -1,5 +1,5 @@
 /* Fronts from Google Fonts @ https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto+Slab:wght@200;800&family=Roboto:ital@0;1&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&family=Roboto+Slab:wght@800&display=swap" rel="stylesheet');
 
 /* Shortcuts for colors and fonts */
 :root {
@@ -17,7 +17,7 @@
     --italicized: #888888;
 /* Fonts */
     --heading-font: 'Roboto Slab', georgia, serif;
-    --sub-font: 'Pathway Gothic One', tahoma, sans-serif;
+    --sub-font: 'Oswald', tahoma, sans-serif;
     --paragraph-font: 'Roboto', tahoma, sans-serif;
 }
 
@@ -46,24 +46,22 @@ header, footer {
 h1, h2, h3 {
     color: var(--primary);
     font-family: var(--heading-font);
-    font-weight: 800;
     font-size: 1.7em;
     letter-spacing: 1px;
-}
-
-p, div {
-    color: var(--font-dark);
-    font-family: var(--paragraph-font);
-    font-weight: 200;
-    font-size: 1em;
 }
 
 h4, h5, h6, li {
     color: var(--font-dark);
     font-family: var(--sub-font);
     font-size: 24px;
-    letter-spacing: 0px;
+    line-height: 1.6em;
     list-style: square;
+}
+
+p, div {
+    color: var(--font-dark);
+    font-family: var(--paragraph-font);
+    font-size: 1em;
 }
 
 i {
