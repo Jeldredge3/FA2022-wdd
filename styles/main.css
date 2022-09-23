@@ -29,24 +29,17 @@ body {
 
 .content {
     background-color: var(--background);
-    box-shadow: 0px 5px 10px 0px var(--shadow);
-    max-width: 500px;
-    min-width: 360px;
-    margin: 0 auto;
-    padding: 4px;
-    border-radius: 12px;
 }
 
 header, footer {
     background-color: var(--primary);
-    border-radius: 8px;
     text-align: center;
 }
 
 h1, h2, h3 {
     color: var(--primary);
     font-family: var(--heading-font);
-    font-size: 1.7em;
+    font-size: 28px;
     letter-spacing: 1px;
 }
 
@@ -61,7 +54,7 @@ h4, h5, h6, li {
 p, div {
     color: var(--font-dark);
     font-family: var(--paragraph-font);
-    font-size: 1em;
+    font-size: 18px;
 }
 
 i {
@@ -96,14 +89,14 @@ a:active { /* Link when visited */
 
 .index-student-name {
     color: var(--secondary);
-    grid-column: 2/3;
     align-self: center;
-    margin-right: 10px;
+    text-align: center;
+    font-size: 40px;
 }
 
 .index-footer {
-    display: block;
-    padding: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .copy {
@@ -115,33 +108,3 @@ a:active { /* Link when visited */
     color: var(--secondary);
     margin-top: 0px;
 }
-
-/* Mobile Display */
-@media screen and (max-width: 550px) {
-    .content {
-        padding: 0px;
-    }
-
-    .index-grid {
-        display: block;
-    }
-
-    .index-header {
-        border-radius: 0px;
-        padding: 0px;
-    }
-
-    .index-footer {
-        border-radius: 0px;
-    }
-
-    .index-student-picture {
-        border-radius: 0px;
-        width: 100%;
-    }
-    
-    .index-student-name {
-        margin: 10px;
-    }
-}
-

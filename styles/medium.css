@@ -1,0 +1,71 @@
+:root {
+/* Colors */
+    --primary: #0B132B;
+    --secondary: #22c2da;
+    --accent1: #243054;
+    --accent2: #dc1529;
+
+    --font-light: #FCFFFC;
+    --font-dark: #0B132B;
+
+    --background: #FCFFFC;
+    --shadow: #030303;
+    --italicized: #888888;
+}
+
+/* Medium Display Properties*/
+@media screen and (min-width: 32.5em) {
+
+    .content {
+        box-shadow: 0px 5px 10px 0px var(--shadow);
+        max-width: 500px;
+        min-width: 360px;
+        margin: 0 auto;
+        padding: 4px;
+        border-radius: 12px;
+    }
+    
+    header, footer {
+        border-radius: 8px;
+    }
+    
+    h1, h2, h3 {
+        font-size: 24px;
+    }
+    
+    h4, h5, h6, li {
+        font-size: 22px;
+    }
+    
+    p, div {
+        font-size: 16px;
+    }
+
+    /* index.html CSS Properties */
+    .index-grid {
+        padding: 0px 32px 16px 32px;
+    }
+    
+    .index-header {
+        display: grid;
+        grid-template-columns: 1fr 1.6fr;
+        padding: 10px;
+    }
+    
+    .index-student-picture {
+        width: 100%;
+        border-radius: 4px;
+    }
+    
+    .index-student-name {
+        grid-column: 2/3;
+        margin-left: 10px;
+        font-size: 26px;
+    }
+
+    .index-footer {
+        display: block;
+        padding: 8px;
+    }
+    
+}
