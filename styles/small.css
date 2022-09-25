@@ -48,8 +48,6 @@
 
     .index-list-area {
         display: block;
-        grid-template-columns: 1fr;
-        row-gap: 0px;
         height: auto;
     }
 
