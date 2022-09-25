@@ -1,7 +1,11 @@
 /* Fronts from Google Fonts @ https://fonts.google.com */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&family=Roboto+Slab:wght@800&display=swap');
 
-/* Shortcuts for colors and fonts */
+/*
+The purpose of this file is contain variable shortcuts for colors and fonts which can be accessed
+across all '.css' files. The file also contains default CSS properties for each HTML document.
+*/
+
 :root {
 /* Colors */
     --primary: #0B132B;
@@ -33,28 +37,39 @@ body {
 
 header, footer {
     background-color: var(--primary);
+    display: block;
     text-align: center;
+    padding: 8px;
 }
 
-h1, h2, h3 {
-    color: var(--primary);
+h1 {
+    color: var(--secondary);
     font-family: var(--heading-font);
-    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: var(--secondary);
+    font-family: var(--paragraph-font);
+    letter-spacing: 2px;
+}
+
+h3, h4, h5, h6 {
+    color: var(--accent1);
+    font-family: var(--heading-font);
     letter-spacing: 1px;
 }
 
-h4, h5, h6, li {
-    color: var(--font-dark);
+li {
+    color: var(--primary);
     font-family: var(--sub-font);
-    font-size: 24px;
     line-height: 1.6em;
     list-style: square;
 }
 
-p, div {
+p {
     color: var(--font-dark);
     font-family: var(--paragraph-font);
-    font-size: 18px;
 }
 
 i {
@@ -64,6 +79,13 @@ i {
 hr {
     border: 2px solid var(--accent2);
     border-radius: 4px;
+    margin: 0px 0px 10px 0px;
+    width: 40%;
+    min-width: 186px;
+}
+
+a {
+    font-family: var(--paragraph-font);
 }
 
 a:active { /* Link when visited */
@@ -77,34 +99,24 @@ a:active { /* Link when visited */
 
 .index-header {
     display: grid;
-    grid-template-columns: 1fr 1.6fr;
+    grid-template-columns: auto 1fr;
     padding: 10px;
 }
 
 .index-student-picture {
-    grid-column: 1/2;
-    width: 90%;
+    width: auto;
     border-radius: 4px;
 }
 
 .index-student-name {
     color: var(--secondary);
     align-self: center;
-    text-align: center;
-    font-size: 40px;
-}
-
-.index-footer {
-    padding-top: 8px;
-    padding-bottom: 8px;
 }
 
 .copy {
     color: var(--secondary);
-    margin-top: 10px;
 }
 
 .last-updated {
     color: var(--secondary);
-    margin-top: 0px;
 }
