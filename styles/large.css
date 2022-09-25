@@ -1,28 +1,28 @@
 /* Colors & Font Roots */
 @import "root.css";
 
-/* Medium Display Properties (~ 520px-1200px wide) */
-@media screen and (min-width: 32.5em) and (max-width:75em) {
+/* Large Display Properties (~ 1200px+ wide) */
+@media screen and (min-width: 32.5em) {
 
     .content {
         box-shadow: 0px 5px 10px 0px var(--shadow);
-        max-width: 520px;
+        max-width: 1080px;
         min-width: 360px;
         margin: 0 auto;
         padding: 4px;
         border-radius: 12px;
     }
-    
+
     header, footer {
         border-radius: 8px;
     }
-    
+
     /* Font Sizes */
-    h1 { font-size: 28px; }
+    h1 { font-size: 32px; }
     h2 { font-size: 18px; }
     h3, h4, h5, h6 { font-size: 28px; }
     li { font-size: 24px; }
-    p { font-size: 18px; }
+    p { font-size: 20px; }
 
     /* index.html CSS Properties */
     .index-grid {
@@ -38,17 +38,24 @@
     }
     
     .index-student-name {
-        text-align: center;
-        margin: 0px;
+        text-align: left;
+        margin-left: 60px;
     }
 
     .index-list-area {
-        display: block;
-        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+        grid-template-rows: 1fr;
+        height: 400px
+    }
+
+    .index-list-1 {
+        grid-column: 1/2;
     }
 
     .index-list-2 {
-        margin-top: -18px;
+        grid-column: 2/3;
     }
     
 }

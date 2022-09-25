@@ -1,0 +1,67 @@
+/* Colors & Font Roots */
+@import "root.css";
+
+/* Small Display Properties (~ 320px-520px wide) */
+@media screen and (min-width: 20em) and (max-width: 32.5em) {
+    body {
+        background-color: var(--accent1); 
+        color:black;
+    }
+
+    header, footer {
+        background-color: var(--primary);
+        text-align: center;
+    }
+
+    /* Font Sizes */
+    h1 { font-size: 32px; }
+    h2 { font-size: 18px; }
+    h3, h4, h5, h6 { font-size: 24px; }
+    li { font-size: 22px; }
+    p { font-size: 18px; }
+
+    i {
+        color: var(--italicized);
+    }
+
+    a:active { /* Link when visited */
+        color: var(--accent2);
+    }
+
+    /* index.html CSS Properties */
+    .index-grid {
+        padding: 0px 32px 16px 32px;
+    }
+
+    .index-header {
+        padding: 10px;
+    }
+
+    .index-student-picture {
+        border-radius: 4px;
+    }
+
+    .index-student-name {
+        text-align: center;
+        margin: 0px;
+    }
+
+    .index-list-area {
+        display: block;
+        height: auto;
+    }
+
+    .index-list-2 {
+        margin-top: -18px;
+    }
+
+    .copy {
+        color: var(--secondary);
+        margin-top: 10px;
+    }
+
+    .last-updated {
+        color: var(--secondary);
+        margin-top: 0px;
+    }
+}
