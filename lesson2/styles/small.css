@@ -1,0 +1,57 @@
+/* Small Display Properties (~ 320px-520px wide) */
+@media screen and (min-width: 20em) and (max-width: 32.5em) {
+
+    header, footer {
+        margin: 0px;
+        text-align: center;
+    }
+
+    /* Font Sizes */
+    h1 { font-size: 38px; }
+    h2, .page-footer { font-size: 20px; }
+    h3, h4, h5, h6 { font-size: 24px; }
+    li { font-size: 22px; }
+    p { font-size: 18px; }
+
+    i {
+        color: var(--italicized);
+    }
+
+    a:active { /* Link when visited */
+        color: var(--accent2);
+    }
+
+    .student-name {
+        margin-top: -5px;
+    }
+
+
+    /* Lesson2 CSS Specific Properties */
+
+    .lesson2-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto);
+    }
+
+    .lesson2-area1, .lesson2-area2, .lesson2-area3 {
+        box-shadow: none;
+        margin: 30px 10px 30px 10px;
+        border-radius: 8px;
+    }
+
+    .lesson2-area1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .lesson2-area2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .lesson2-area3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
