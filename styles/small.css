@@ -3,19 +3,19 @@
 
 /* Small Display Properties (~ 320px-520px wide) */
 @media screen and (min-width: 20em) and (max-width: 32.5em) {
-    body {
-        background-color: var(--accent1); 
-        color:black;
+
+    .content {
+        border-top: 8px solid white;
+        border-bottom: 8px solid white;
     }
 
     header, footer {
-        background-color: var(--primary);
         text-align: center;
     }
 
     /* Font Sizes */
-    h1 { font-size: 32px; }
-    h2 { font-size: 18px; }
+    h1 { font-size: 38px; }
+    h2, .page-footer { font-size: 20px; }
     h3, h4, h5, h6 { font-size: 24px; }
     li { font-size: 22px; }
     p { font-size: 18px; }
@@ -26,6 +26,10 @@
 
     a:active { /* Link when visited */
         color: var(--accent2);
+    }
+
+    .student-name {
+        margin-top: -5px;
     }
 
     /* index.html CSS Properties */
