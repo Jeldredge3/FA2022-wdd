@@ -31,7 +31,7 @@
     .lesson2-grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(auto);
+        grid-template-rows: auto;
     }
 
     .lesson2-area1, .lesson2-area2, .lesson2-area3 {
