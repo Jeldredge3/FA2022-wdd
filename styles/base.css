@@ -95,6 +95,14 @@ a {
     font-family: var(--paragraph-font);
 }
 
+.copy {
+    color: var(--secondary);
+}
+
+.last-updated {
+    color: var(--secondary);
+}
+
 a:active { /* Link when visited */
     color: var(--accent2);
 }
@@ -117,12 +125,4 @@ a:active { /* Link when visited */
 
 .index-student-name {
     align-self: center;
-}
-
-.copy {
-    color: var(--secondary);
-}
-
-.last-updated {
-    color: var(--secondary);
 }
