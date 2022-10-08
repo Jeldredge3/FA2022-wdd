@@ -1,0 +1,87 @@
+/* Large Display Properties (~ 1200px+ wide) */
+@media screen and (min-width: 32.5em) {
+
+    .content {
+        min-width: 360px;
+        margin: 0 auto;
+        padding: 8px 200px 8px 200px;
+        border-radius: 12px;
+    }
+
+    header {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    footer {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    /* Font Sizes */
+    h1 { font-size: 32px; }
+    h2, .page-footer { font-size: 18px; }
+    h3, h4, h5, h6 { font-size: 28px; }
+    li { font-size: 24px; }
+    p { font-size: 20px;}
+
+    nav {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    nav div {
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-bottom: 2px;
+    }
+
+    nav {
+		flex-direction: row;
+	}
+	
+    nav a { 
+        font-size: 20px; 
+        padding: 10px; 
+    }
+
+    hr {
+        width: 30%;
+        margin: 0px 0px 10px 0px;
+    }
+
+    /* Index CSS Properties */
+    /* Color Scheme CSS Properties */
+    .index-grid, .typography-grid, .audience-grid {
+        margin-left: 1px;
+        margin-right: 1px;
+        padding-left: 40px;
+        padding-right: 20%;
+    }
+
+    .color-scheme-grid {
+        margin-left: 1px;
+        margin-right: 1px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .index-element-1, .index-element-2, .index-element-3,
+    .color-scheme-element-1, .color-scheme-element-2,
+    .typography-element-1, .typography-element-2,
+    .audience-element-1, .audience-element-2, .audience-element-3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .color-scheme-element-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .primary { grid-column: 1/2; grid-row: 1/2; }
+    .secondary { grid-column: 2/3; grid-row: 1/2; }
+    .accent1 { grid-column: 1/2; grid-row: 2/3; }
+    .accent2 { grid-column: 2/3; grid-row: 2/3; }
+}
