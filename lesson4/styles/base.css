@@ -1,0 +1,197 @@
+/* Fronts from Google Fonts @ https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&family=PT+Sans+Narrow:wght@700&display=swap');
+/*
+The purpose of this file is contain variable shortcuts for colors and fonts which can be accessed
+across all '.css' files. The file also contains default CSS properties for each HTML document.
+*/
+
+:root {
+/* Colors */
+    --primary: #33e58c;
+    --secondary: #060e1e;
+    --accent1: #23a598;
+    --accent2: #e6fbf7;
+
+    
+    --font-light: #e6fbf7;
+    --font-dark: #060e1e;
+
+    --background: #e6fbf7;
+    --background-alt: #bcede4;
+    --shadow: #0303038e;
+    --italicized: #888888;
+/* Fonts */
+    --heading-font: 'PT Sans Narrow', tahoma, sans-serif;
+    --paragraph-font: 'Inter Tight', tahoma, sans-serif;
+}
+
+/* Universal CSS Properties */
+
+body {
+    background-color: var(--accent1); 
+    color:black;
+}
+
+header, footer {
+    background-color: var(--secondary);
+    box-shadow: 0px 5px 10px 0px var(--shadow);
+    width: auto; height: auto;
+    margin: 0px;
+    padding: 4px;
+}
+
+h1 { /* Heading */
+    color: var(--accent2);
+    font-family: var(--heading-font);
+    letter-spacing: 2px;
+}
+
+h2 { /* Subheading */
+    color: var(--secondary);
+    font-family: var(--paragraph-font);
+    letter-spacing: 2px;
+}
+
+h3, h4, h5, h6 { /* Section */
+    color: var(--accent1);
+    font-family: var(--heading-font);
+    letter-spacing: 1px;
+}
+
+li {
+    color: var(--secondary);
+    font-family: var(--paragraph-font);
+    line-height: 1.6em;
+    list-style: square;
+}
+
+p {
+    color: var(--font-dark);
+    font-family: var(--paragraph-font);
+}
+
+i {
+    color: var(--italicized);
+}
+
+hr {
+    border: 2px solid var(--primary);
+}
+
+a {
+    font-family: var(--paragraph-font);
+}
+
+a:active { /* Link when visited */
+    color: var(--accent1);
+}
+
+nav {
+	margin: 0 auto;
+	background-color: var(--primary);
+}
+
+.navigation {
+	list-style: none;
+	padding: 0px;
+    margin: 0px;
+    border-color: var(--secondary);
+    border-style: solid;
+}
+
+.navigation li {
+    border-color: var(--secondary);
+    border-style: solid;
+}
+
+.navigation a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: var(--secondary);
+	transition: 0.2s;
+    padding: 4px;
+}
+
+.navigation a:hover {
+	background-color: var(--accent1);
+    color: var(--accent2);
+}
+
+.responsive li:first-child {
+    background-color: var(--accent2);
+}
+
+img {
+    width: auto;
+}
+
+/* Header */
+.company-logo, .footer-logo {
+    max-width: 200px;
+}
+
+.time {
+    color: var(--accent1);
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+.facebook, .linkedin {
+    max-width: 100px;
+}
+
+
+.copy {
+    color: var(--accent1);
+    letter-spacing: 1px;
+}
+
+/* Footer */
+.company-info {
+    text-align: center;
+}
+
+.contact-info p {
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+.footer-company {
+    color: var(--accent2);
+    margin-top: -16px;
+}
+
+.physical-address, .email-address, .phone-number {
+    color: var(--accent2);
+}
+
+/* Index CSS Properties */
+.index-grid {
+    background-color: var(--background);
+    padding: 4px 10px 4px 10px;
+    /* --Temporary-- */
+    min-height: 500px;
+}
+
+.call-to-action, .events, .weather, .new-release, .join {
+    background-color: var(--background-alt);
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+    width: auto; height: auto;
+    margin: 12px;
+    padding-left: 20px;
+}
+
+.spotlight-grid {
+    background-color: var(--background-alt);
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+    width: auto; height: auto;
+    margin: 12px;
+}
+
+.spotlight-1, .spotlight-2, .spotlight-3 {
+    background-color: var(--background);
+    width: auto; height: auto;
+    margin: 8px;
+    padding-left: 20px;
+}
