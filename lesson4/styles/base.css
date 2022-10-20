@@ -11,7 +11,6 @@ across all '.css' files. The file also contains default CSS properties for each 
     --secondary: #060e1e;
     --accent1: #23a598;
     --accent2: #e6fbf7;
-
     
     --font-light: #e6fbf7;
     --font-dark: #060e1e;
@@ -71,7 +70,7 @@ p {
 }
 
 i {
-    color: var(--italicized);
+    color: var(--accent1);
 }
 
 hr {
@@ -147,6 +146,10 @@ img {
     letter-spacing: 1px;
 }
 
+.nav-select {
+    background-color: var(--accent1);
+}
+
 /* Footer */
 .company-info {
     text-align: center;
@@ -164,6 +167,16 @@ img {
 
 .physical-address, .email-address, .phone-number {
     color: var(--accent2);
+}
+
+.location-icon {
+    display: inline-flex;
+}
+
+.location-map {
+    color: var(--accent2);
+    display: inline-flex;
+    margin-left: 8px;
 }
 
 /* Index CSS Properties */
