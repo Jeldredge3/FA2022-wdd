@@ -22,7 +22,10 @@
     <header>
         <div id="banner">Testing</div>
         <div class="company-logo">
-            <img class="logo-image" src="../lesson4/images/draper-commerce-rsz-je2022.png" alt="Draper Commerce Logo">
+            <picture class=" logo-image">
+                <img src="../lesson4/images/draper-commerce-100px-je2022.webp" alt="Draper Commerce Logo"
+                srcset="../lesson4/images/draper-commerce-100px-je2022.webp x1, ../lesson4/images/draper-commerce-100px-je2022.webp x2, ../lesson4/images/draper-commerce-400px-je2022.webp x3">
+            </picture>
         </div>
         <div class="company-name">
             <h1>Draper Commerce</h1>
@@ -31,8 +34,14 @@
             <span id="todays-date">N/A</span>
         </div>
         <div class="social-media">
-            <img class="facebook" onclick="window.location.href='www.facebook.com';" src="../lesson4/images/dc-facebook.png" alt="Facebook Logo">
-            <img class="linkedin" onclick="window.location.href='www.linkedin.com';" src="../lesson4/images/dc-linkedin.png" alt="Linkedin Logo">
+            <picture class=" facebook">
+                <img src="../lesson4/images/dc-facebook-100px.webp" alt="Facebook Logo" onclick="window.location.href='www.facebook.com';"
+                srcset="../lesson4/images/dc-facebook-100px.webp x1, ../lesson4/images/dc-facebook-100px.webp x2, ../lesson4/images/dc-facebook-400px.webp x3">
+            </picture>
+            <picture class=" linkedin">
+                <img src="../lesson4/images/dc-linkedin-100px.webp" alt="Linkedin Logo" onclick="window.location.href='www.linkedin.com';"
+                srcset="../lesson4/images/dc-linkedin-100px.webp x1, ../lesson4/images/dc-linkedin-100px.webp x2, ../lesson4/images/dc-linkedin-400px.webp x3">
+            </picture>
         </div>
     </header>
     <nav>
@@ -49,9 +58,17 @@
     <div class="index-grid">
         <div class="call-to-action">
 
-            <h2 class="action-title">Discover Draper</h2>
-            <img class="action-image" src="../lesson4/images/draper-canyon-je.jpg" alt="Bear Canyon Suspension Bridge Draper UT">
-
+            <h2 class="action-title">Become a Part of Draper</h2>
+            <picture class=" action-image">
+                <img src="../lesson4/images/wdd230-org-1080px.png" alt="Photo of a group meeting"
+                srcset="../lesson4/images/wdd230-org-1080px.png x1, ../lesson4/images/wdd230-org-2160px.png x2, ../lesson4/images/wdd230-org-4320px.png x3">
+            </picture>
+            <!--
+            <picture class=" action-image">
+                <img src="../lesson4/images/draper-canyon-720px-je2022.png" alt="Bear Canyon Suspension Bridge Draper UT"
+                srcset="../lesson4/images/draper-canyon-720px-je2022.png x1, ../lesson4/images/draper-canyon-1080px-je2022.png x2, ../lesson4/images/draper-canyon-2048px-je2022.png x3">
+            </picture>
+            -->
         </div>
         <div class="events">
             <h2>Event</h2>
@@ -65,8 +82,13 @@
             <div class="wind-speed">Wind Speed: <span id="w-speed"></span></div>
             <div class="wind-chill">Wind Chill: <span id="w-chill"></span></div>
         </div>
-        <div class="new-release">
-            <h2>New Release</h2>
+        <div class="news-release">
+            <h2>News Release</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan diam sit amet lobortis finibus. 
+                Praesent placerat lacus vitae augue mollis, tristique posuere sem congue. 
+                Duis vel erat fermentum, sollicitudin magna id, hendrerit massa. Duis maximus ex porttitor ante pretium tempus. 
+                Mauris feugiat sapien sit amet fringilla varius. 
+                Nulla interdum metus arcu, ac laoreet massa congue sed. Mauris lobortis tortor nec fermentum rhoncus.</p>
         </div>
         <div class="spotlight-grid">
             <div class="spotlight-1">
@@ -87,14 +109,17 @@
     </main>
     <footer>
         <div class="company-info">
-            <img class="footer-logo" src="../lesson4/images/draper-commerce-rsz-je2022.png" alt="Draper Commerce Logo">
+            <picture class="footer-logo">
+                <img src="../lesson4/images/draper-commerce-100px-je2022.webp" alt="Draper Commerce Logo"
+                srcset="../lesson4/images/draper-commerce-100px-je2022.webp x1, ../lesson4/images/draper-commerce-100px-je2022.webp x2, ../lesson4/images/draper-commerce-400px-je2022.webp x3">
+            </picture>
             <h3 class="footer-company">Draper Commerce</h3>
         </div>
         <div class="contact-info">
             <p class="physical-address">001 Berry Street, Draper, UT 84020</p>
             <p class="email-address">contact@drapercommerce.us</p>
             <p class="phone-number">(801)-1234-5678</p>
-            <div class="location-map">Location Map<span class="location-icon"><i class="fas fa-map-marker-alt"></i></span></div>
+            <div class="location-map"><span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>Location Map</div>
         </div>
         <div class="student-info">
             <p class="copy">&copy; 2022 Draper Commerce | Jordan Eldredge | Last Updated: <span id="update">N/A</span></p>
@@ -105,6 +130,6 @@
 <script src="../lesson4/scripts/responsive-menu.js"></script>
 <script src="../lesson4/scripts/last-modified.js"></script>
 <script src="../lesson4/scripts/check-weekday.js"></script>
-<script src="../lesson4/scripts/weather.js"></script>
+<script src="../lesson4/scripts/windchill.js"></script>
 </body>
 </html>
