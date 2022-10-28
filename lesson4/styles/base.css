@@ -72,7 +72,7 @@ li {
     list-style: square;
 }
 
-p, span, div {
+p, div {
     color: var(--font-dark);
     font-family: var(--paragraph-font);
 }
@@ -213,6 +213,7 @@ img {
 #update {
     color: var(--accent1);
 }
+
 /* Index CSS Properties */
 .index-grid {
     background-color: var(--accent2);
@@ -248,10 +249,9 @@ img {
     position: absolute; 
 }
 .action-image img {
-    max-width: 100%;
-    overflow: hidden;
-    vertical-align: middle;
     object-fit: cover;
+    width: 100%; height: 100%;
+
 }
 .action-image {
     background-position: 50% 50%;
@@ -268,7 +268,7 @@ img {
 .weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr 1fr 1fr;
 }
 
 .weather-title {
