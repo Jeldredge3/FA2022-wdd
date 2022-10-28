@@ -170,6 +170,9 @@
     #w-temp {
         font-size: 48px;
     }
+    #w-icon {
+        width: 75px;
+    }
 
     .news-release {
         grid-column: 1/4;

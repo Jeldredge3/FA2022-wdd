@@ -145,6 +145,13 @@
     #w-temp {
         font-size: 64px;
     }
+    #w-icon {
+        display: block;
+        margin: auto;
+    }
+    #w-icon {
+        width: 100px;
+    }
 
     .news-release {
         grid-column: 1/2;

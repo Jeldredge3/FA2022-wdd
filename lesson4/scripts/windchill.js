@@ -1,7 +1,7 @@
 /* Weather Temporary Code */
 let temp_f = 72;
 let wind_speed_mph = 2;
-let weather_summary = "Clear";
+let weather_summary = "Cloudy";
 var degree_sign = "\u00B0";
 
 /* Temperature & Wind Speed Code */
@@ -15,6 +15,24 @@ let format_temp_f = temp_f.toFixed(0) + degree_sign + "F";
 weather_temp_f.textContent = format_temp_f;
 weather_description.textContent = weather_summary;
 wind_speed.textContent = wind_speed_mph + " mph";
+
+switch(weather_summary) {
+    case "Clear":
+        weather_icon.src = "../lesson4/images/i-sunny-64px.webp";
+        break;
+    case "Partial":
+        weather_icon.src = "../lesson4/images/i-part-cloud-64px.webp";
+        break;
+    case "Cloudy":
+        weather_icon.src = "../lesson4/images/i-cloudy-64px.webp";
+        break;
+    case "Rain":
+        weather_icon.src = "../lesson4/images/i-rainy-64px.webp";
+        break;
+    case "Storm":
+        weather_icon.src = "../lesson4/images/i-stormy-64px.webp";
+        break;
+}
 
 /* Fahrenheit to Celcius Conversion */
 function convertFtoC(f) {

@@ -210,6 +210,9 @@ img {
     display: inline-flex;
 }
 
+#update {
+    color: var(--accent1);
+}
 /* Index CSS Properties */
 .index-grid {
     background-color: var(--accent2);
@@ -285,6 +288,10 @@ img {
 #w-temp {
     font-family: var(--heading-font);
     color: var(--secondary);
+}
+#w-icon {
+    display: block;
+    margin: auto;
 }
 .weather-desc {
     grid-column: 1/3;
