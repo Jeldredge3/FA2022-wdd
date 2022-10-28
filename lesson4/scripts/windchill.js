@@ -20,16 +20,16 @@ switch(weather_summary) {
     case "Clear":
         weather_icon.src = "../lesson4/images/i-sunny-64px.webp";
         break;
-    case "Partial":
+    case "Partially Cloudy":
         weather_icon.src = "../lesson4/images/i-part-cloud-64px.webp";
         break;
     case "Cloudy":
         weather_icon.src = "../lesson4/images/i-cloudy-64px.webp";
         break;
-    case "Rain":
+    case "Rainy":
         weather_icon.src = "../lesson4/images/i-rainy-64px.webp";
         break;
-    case "Storm":
+    case "Stormy":
         weather_icon.src = "../lesson4/images/i-stormy-64px.webp";
         break;
 }
