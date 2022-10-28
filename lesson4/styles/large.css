@@ -166,6 +166,9 @@
     #w-temp {
     font-size: 64px;
     }
+    #w-icon {
+        width: 100px;
+    }
 
     .news-release {
         grid-column: 2/3;
