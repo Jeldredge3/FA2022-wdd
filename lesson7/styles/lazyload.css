@@ -82,10 +82,19 @@
         border: 8px solid var(--primary);
         border-radius: 4px;
         margin-top: 8px;
+        opacity: 0;
+        transform: translateX(-20%);
+        transition: all 300ms;
     }
 
     [data-src] {
         min-width: 300px; min-height: 400px;
+    }
+
+    .fade-in {
+        transform: translateX(0);
+        opacity: 1;
+        transition: all 1500ms;
     }
 
 /* Large Display Properties (~ 1200px+ wide) */
