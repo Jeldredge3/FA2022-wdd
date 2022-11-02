@@ -12,7 +12,7 @@ function preloadImage(img) {
 
 const imgOptions = {
     threshold: 1, // set transition for loading images.
-    rootMargin: "0px 0px 100px 0px" // positive numbers check for off of the screen.
+    rootMargin: "0px 0px -100px 0px" // positive numbers check for off of the screen.
 };
 
 const imgObserver = new IntersectionObserver((entries, imgObserver)=> {
