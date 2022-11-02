@@ -15,7 +15,7 @@ across all '.css' files. The file also contains default CSS properties for each 
     --font-light: #e6fbf7;
     --font-dark: #060e1e;
 
-    --background: #e6fbf7;
+    --background: #ffffff;
     --background-alt: #bcede4;
     --shadow: #0303038e;
     --italicized: #888888;
@@ -220,14 +220,8 @@ img {
     padding: 4px 10px 4px 10px;
 }
 
-.index-grid p {
-    background-color: var(--background);
-    width: auto; height: auto;
-    padding: 20px 4px 20px 4px;
-}
-
 .call-to-action, .events, .weather, .news-release, .join, .spotlight-grid {
-    background-color: var(--accent2);
+    background-color: var(--background);
     border: 1px solid var(--background);
     box-shadow: 0px 2px 5px 0px var(--shadow);
     width: auto; height: auto;
@@ -235,7 +229,7 @@ img {
 }
 
 .call-to-action, .events, .weather, .news-release, .join {
-    padding: 12px;
+    padding: 12px 20px 12px 20px;
 }
 
 .spotlight-grid {
@@ -244,14 +238,13 @@ img {
 }
 
 .action-title {
-    background-color: var(--accent2);
+    background-color: var(--accent1);
     color: var(--secondary);
     position: absolute; 
 }
 .action-image img {
     object-fit: cover;
     width: 100%; height: 100%;
-
 }
 .action-image {
     background-position: 50% 50%;
@@ -326,4 +319,30 @@ img {
     background-color: var(--secondary);
     color: var(--primary);
     box-shadow: none;
+}
+
+/* Discover CSS Properties */
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: var(--accent2);
+    padding: 4px 10px 4px 10px;
+}
+
+.discover-grid p {
+    width: auto; height: auto;
+}
+
+.discover-grid div {
+    background-color: var(--background);
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+    width: auto; height: auto;
+    margin: 12px;
+    padding: 12px 20px 12px 20px;
+}
+
+.discover-grid img {
+    object-fit: cover;
+    width: auto; height: auto;
 }

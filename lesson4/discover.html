@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../lesson4/styles/large.css">
     <link rel="stylesheet" href="../lesson4/styles/medium.css">
     <link rel="stylesheet" href="../lesson4/styles/small.css">
-    <title>Chamber of Commerce - Home</title>
+    <title>Chamber of Commerce - Discover</title>
 </head>
 <body>
 <!--Enables FontAwesome Icons-->
@@ -47,67 +47,78 @@
     <nav>
         <ul class="navigation">
         <li><a class="ham" href="#"><i class="fa-solid fa-bars"></i>Menu</a></li>
-        <li><a class="nav-select" href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-        <li><a href="discover.html"><i class="fa-solid fa-earth-americas"></i>Discover</a></li>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a class="nav-select" href="discover.html"><i class="fa-solid fa-earth-americas"></i>Discover</a></li>
         <li><a href="index.html"><i class="fa-solid fa-folder"></i>Directory</a></li>
         <li><a href="index.html"><i class="fa-solid fa-handshake-simple"></i>Join</a></li>
         <li><a href="index.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
     </ul>
     </nav>
     <main>
-    <div class="index-grid">
-        <div class="call-to-action">
-            <h2 class="action-title">Become a Part of Draper</h2>
-            <picture class=" action-image"> 
-                <source media="(max-width: 480px)" srcset="../lesson4/images/wdd230-org-480px.jpg">
-                <source media="(min-width: 480px) and (max-width: 540px)" srcset="../lesson4/images/wdd230-org-480px.jpg">
-                <source media="(min-width: 540px) and (max-width: 720px)" srcset="../lesson4/images/wdd230-org-540px.jpg">
-                <source media="(min-width: 720px) and (max-width: 1080px)" srcset="../lesson4/images/wdd230-org-720px.jpg">
-                <source media="(min-width: 1080px) and (max-width: 2160px)" srcset="../lesson4/images/wdd230-org-1080px.jpg">
-                <source media="(min-width: 1080px) and (max-width: 2160px)" srcset="../lesson4/images/wdd230-org-2160px.jpg">
-                <img src="../lesson4/images/wdd230-org-480px.jpg" alt="Photo of a group meeting">
+    <div class="discover-grid">
+        <div class="discover-1">
+            <picture class="discover-img-1"> 
+                <img src="../lesson4/images/draper-park-600x400px.jpg" alt="Draper Park">
             </picture>
-            <!--
-            <picture class=" action-image">
-                <img src="../lesson4/images/draper-canyon-720px-je2022.png" alt="Bear Canyon Suspension Bridge Draper UT"
-                srcset="../lesson4/images/draper-canyon-720px-je2022.png x1, ../lesson4/images/draper-canyon-1080px-je2022.png x2, ../lesson4/images/draper-canyon-2048px-je2022.png x3">
-            </picture>
-            -->
-        </div>
-        <div class="events">
-            <h2>Event</h2>
-        </div>
-        <div class="weather">
-            <h2 class="weather-title">Weather</h2>
-            <div class="weather-icon"><img src="../lesson4/images/i-sunny-64px.webp" alt="Weather Icon" id="w-icon"></div>
-            <div class="weather-temp"><span id="w-temp"></span></div>
-            <div class="weather-desc"><span id="w-description"></span><hr></div>
-            
-            <div class="wind-speed">Wind Speed: <span id="w-speed"></span></div>
-            <div class="wind-chill">Wind Chill: <span id="w-chill"></span></div>
-        </div>
-        <div class="news-release">
-            <h2>News Release</h2>
+            <h2>Draper Park</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan diam sit amet lobortis finibus. 
                 Praesent placerat lacus vitae augue mollis, tristique posuere sem congue. 
                 Duis vel erat fermentum, sollicitudin magna id, hendrerit massa. Duis maximus ex porttitor ante pretium tempus. 
                 Mauris feugiat sapien sit amet fringilla varius. 
                 Nulla interdum metus arcu, ac laoreet massa congue sed. Mauris lobortis tortor nec fermentum rhoncus.</p>
+                Image source: <a href="https://www.draperutah.gov/555/Draper-City-Park">www.draperutah.gov</a>
         </div>
-        <div class="spotlight-grid">
-            <div class="spotlight-1">
-                <h3>Spotlight 1</h3>
-            </div>
-            <div class="spotlight-2">
-                <h3>Spotlight 2</h3>
-            </div>
-            <div class="spotlight-3">
-                <h3>Spotlight 3</h3>
-            </div>
+
+        <div class="discover-2">
+            <picture class="discover-img-2"> 
+                <img src="../lesson4/images/loveland-aquarium-600x400px.jpg" alt="Loveland Aquarium">
+            </picture>
+            <h2>Loveland Living Planet Aquarium</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan diam sit amet lobortis finibus. 
+                Praesent placerat lacus vitae augue mollis, tristique posuere sem congue. 
+                Duis vel erat fermentum, sollicitudin magna id, hendrerit massa. Duis maximus ex porttitor ante pretium tempus. 
+                Mauris feugiat sapien sit amet fringilla varius. 
+                Nulla interdum metus arcu, ac laoreet massa congue sed. Mauris lobortis tortor nec fermentum rhoncus.</p>
+            Image source: <a href="https://beecherwalker.com/portfolio-posts/loveland-living-planet-aquarium/">www.beecherwalker.com</a>  
         </div>
-        <div class="join">
-            <button id="join-button" onclick="window.location.href='index.html';">Join Us</button>
-            <p>Apply for our chamber of commerce and become part of our growing community!</p>
+
+        <div class="discover-3">
+            <picture class="discover-img-3"> 
+                <img src="../lesson4/images/draper-temple-600x400px.jpg" alt="Draper Utah Temple">
+            </picture>
+            <h2>Draper Temple</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan diam sit amet lobortis finibus. 
+                Praesent placerat lacus vitae augue mollis, tristique posuere sem congue. 
+                Duis vel erat fermentum, sollicitudin magna id, hendrerit massa. Duis maximus ex porttitor ante pretium tempus. 
+                Mauris feugiat sapien sit amet fringilla varius. 
+                Nulla interdum metus arcu, ac laoreet massa congue sed. Mauris lobortis tortor nec fermentum rhoncus.</p>
+            Image source: <a href="https://www.churchofjesuschrist.org/temples/details/draper-utah-temple?lang=eng">www.churchofjesuschrist.org</a>
+        </div>
+
+        <div class="discover-4">
+            <picture class="discover-img-4"> 
+                <img src="../lesson4/images/bear-canyon-suspension-bridge-600x400px.jpg" alt="Bear Canyon Suspension Bridge">
+            </picture>
+            <h2>Bear Canyon Suspension Bridge</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan diam sit amet lobortis finibus. 
+                Praesent placerat lacus vitae augue mollis, tristique posuere sem congue. 
+                Duis vel erat fermentum, sollicitudin magna id, hendrerit massa. Duis maximus ex porttitor ante pretium tempus. 
+                Mauris feugiat sapien sit amet fringilla varius. 
+                Nulla interdum metus arcu, ac laoreet massa congue sed. Mauris lobortis tortor nec fermentum rhoncus.</p>
+            Image source: <a href="https://www.utahsadventurefamily.com/bear-canyon-suspension-bridge/">www.utahsadventurefamily.com</a>
+        </div>
+
+        <div class="discover-5">
+            <picture class="discover-img-5"> 
+                <img src="../lesson4/images/draper-peaks-600x400px.jpg" alt="Draper Peaks Shopping District">
+            </picture>
+            <h2>Draper Peaks</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan diam sit amet lobortis finibus. 
+                Praesent placerat lacus vitae augue mollis, tristique posuere sem congue. 
+                Duis vel erat fermentum, sollicitudin magna id, hendrerit massa. Duis maximus ex porttitor ante pretium tempus. 
+                Mauris feugiat sapien sit amet fringilla varius. 
+                Nulla interdum metus arcu, ac laoreet massa congue sed. Mauris lobortis tortor nec fermentum rhoncus.</p>
+            Image source: <a href="https://www.loopnet.com/Listing/147-175-E-12300-S-Draper-UT/12049876/">www.loopnet.com</a>
         </div>
     </div>
     </main>
@@ -130,6 +141,7 @@
         </div>
     </footer>
 </div>
+<script src="../lesson4/scripts/lazy-loading.js"></script>
 <script src="../lesson4/scripts/todays-date.js"></script>
 <script src="../lesson4/scripts/responsive-menu.js"></script>
 <script src="../lesson4/scripts/last-modified.js"></script>
