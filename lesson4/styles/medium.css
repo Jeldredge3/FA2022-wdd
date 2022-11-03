@@ -147,10 +147,11 @@
     .call-to-action {
         grid-column: 1/4;
         grid-row: 1/2;
+        padding: 12px;
     }
     
     .action-title {
-        margin: 40px 0px 0px 0px;
+        margin: 30px 0px 0px 0px;
         padding: 4px 40px 4px 40px;
         font-size: 36px;
     }
@@ -203,5 +204,23 @@
 
     .spotlight-3 {
         display: none;
+    }
+
+    /* Discover CSS Properties */
+    .discover-grid {
+        padding: 4px 10% 4px 10%;
+    }
+
+    .discover-grid div picture {
+        padding: 12px;
+    }
+
+    .discover-grid figcaption {
+        padding-left: 12px;
+    }
+
+    .discover-grid img {
+        width: auto;
+        padding: 0px;
     }
 }

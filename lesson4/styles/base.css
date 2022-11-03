@@ -72,9 +72,15 @@ li {
     list-style: square;
 }
 
-p, div {
+p, div, figcaption {
     color: var(--font-dark);
     font-family: var(--paragraph-font);
+}
+
+figcaption {
+    font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 20px;
 }
 
 i {
@@ -171,10 +177,15 @@ img {
     text-align: center;
 }
 
-.facebook, .linkedin {
-    max-width: 100px;
+.social-media img {
+    background-color: var(--primary);
+    max-width: 100px; max-height: 100px;
 }
 
+.social-media img:hover {
+    background-color: var(--accent1);
+    cursor: pointer;
+}
 
 .copy {
     color: var(--accent1);
@@ -214,6 +225,10 @@ img {
     color: var(--accent1);
 }
 
+.visits {
+    color: var(--accent1);
+}
+
 /* Index CSS Properties */
 .index-grid {
     background-color: var(--accent2);
@@ -228,7 +243,7 @@ img {
     margin: 12px;
 }
 
-.call-to-action, .events, .weather, .news-release, .join {
+.events, .weather, .news-release, .join {
     padding: 12px 20px 12px 20px;
 }
 
@@ -238,15 +253,16 @@ img {
 }
 
 .action-title {
-    background-color: var(--accent1);
+    background-color: var(--background);
     color: var(--secondary);
+    box-shadow: 0px 2px 5px 0px var(--shadow);
     position: absolute; 
 }
 .action-image img {
+    display: block;
     object-fit: cover;
+    background-color: var(--primary);
     width: 100%; height: 100%;
-}
-.action-image {
     background-position: 50% 50%;
     z-index: -1;
 }
@@ -323,26 +339,53 @@ img {
 
 /* Discover CSS Properties */
 .discover-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    display: block;
     background-color: var(--accent2);
-    padding: 4px 10px 4px 10px;
 }
 
-.discover-grid p {
-    width: auto; height: auto;
-}
-
-.discover-grid div {
+.discover-1, .discover-2, .discover-3, .discover-4, .discover-5 {
     background-color: var(--background);
     box-shadow: 0px 2px 5px 0px var(--shadow);
-    width: auto; height: auto;
-    margin: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.discover-grid div picture {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0 auto;
+}
+
+.discover-sub-div {
+    grid-column: 1/2;
+    grid-row: 2/3;
     padding: 12px 20px 12px 20px;
 }
 
 .discover-grid img {
+    background-color: var(--primary);
     object-fit: cover;
-    width: auto; height: auto;
+    max-width: 100%; max-height: auto;
+    transition: all 300ms;
+}
+
+.discover-grid img:hover {
+    background-color: var(--accent1);
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+    transition: all 300ms;
+}
+
+.hidden {
+    opacity: 1;
+    transform: translateX(-50%);
+    transition: all 300ms;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1500ms;
 }

@@ -26,7 +26,6 @@ if ('IntersectionObserver' in window) {
         } else {
             const img = entry.target; 
             loadImage(img);
-            //img.classList.add('fade');
             // Stop observing the image as the image as already been loaded.
             observer.unobserve(img);
         }
