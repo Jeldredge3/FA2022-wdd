@@ -7,8 +7,6 @@ const loadImage = (img) => {
     img.setAttribute('src', img.getAttribute('data-src'));
     img.onload = () => {
         img.removeAttribute('data-src');
-        img.classList.remove('hidden');
-        img.classList.add('fade-in');
     };
 };
 
