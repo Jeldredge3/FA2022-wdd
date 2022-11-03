@@ -1,33 +1,42 @@
 // create a list of all the images.
-const images = document.querySelectorAll("img[data-src]");
+const images = document.querySelectorAll('img[data-src]');
+console.log(images);
 
-/* Function: Get the data-src from the image. */
-function preloadImage(img) {
-    const src = img.getAttribute("data-src");
-    if(!src) { // return if there is no data-src.
-        return;
-    } 
-    img.src = src;
-}
-
-const imgOptions = {
-    threshold: 1, // set transition for loading images.
-    rootMargin: "0px 0px 100px 0px" // positive numbers check for off of the screen.
+/* get data-src from the image, add the src attribute */
+const loadImage = (img) => {
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = () => {
+        img.removeAttribute('data-src');
+        img.classList.remove('hidden');
+        img.classList.add('fade-in');
+    };
 };
 
-const imgObserver = new IntersectionObserver((entries, imgObserver)=> {
-entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-        return; // return if Intersection Observer is not supported.
-    } else {
-        preloadImage(entry.target);
-        // Stop observing the image as the image as already been loaded.
-        imgObserver.unobserve(entry.target);
-    }
-})
-}, imgOptions);
+const imgOptions = {
+    root: null,
+    threshold: 1, // set transition for loading images.
+    rootMargin: '0px 0px 200px 0px' // positive numbers check for off of the screen.
+};
+
+if ('IntersectionObserver' in window) {
+    // create the observer for each item in the list (callback, options)
+    const imgObserver = new IntersectionObserver((entries, observer)=> {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return; // return if Intersection Observer is not supported.
+        } else {
+            const img = entry.target; 
+            loadImage(img);
+            // Stop observing the image as the image as already been loaded.
+            observer.unobserve(img);
+        }
+    });
+    }, imgOptions);
 
 // loop through each image in the list.
-images.forEach(image => {
-    imgObserver.observe(image);
+images.forEach(img => {
+    imgObserver.observe(img);
 });
+} else {
+
+}

@@ -182,4 +182,25 @@
     .spotlight-3 {
         display: none;
     }
+
+    /* Discover CSS Properties */
+    .discover-grid {
+        padding: 4px 20px 4px 20px;
+    }
+
+    .discover-grid div picture {
+        padding: 0px;
+    }
+
+    .discover-grid figcaption {
+        padding-left: 20px;
+    }
+
+    .discover-grid img {
+        padding: 0px;
+    }
+
+    .discover-grid img:hover {
+        box-shadow: none;
+    }
 }
