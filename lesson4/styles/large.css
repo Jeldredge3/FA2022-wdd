@@ -219,4 +219,40 @@
         width: 600px;
         padding: 8px;
     }
+
+    /* Join CSS Properties */
+    .join-grid {
+        padding: 4px 20% 4px 20%;
+    }
+
+    input, textarea {
+        font-size: 1em;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    input {
+        height: 20px;
+    }
+
+    input[type="submit"] {
+        padding: 4px 100px;
+        width: auto;
+    }
+
+    input[type="radio"] {
+        height: auto;
+    }
+
+    /* ThankYou CSS Properties */
+    .thankyou-grid {
+        padding: 60px 20% 80px 20%;
+    }
+    
+    .thankyou-message {
+        padding: 20px 60px;
+    }
+    
 }
