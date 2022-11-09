@@ -1,0 +1,199 @@
+/* Import Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&family=Roboto+Slab:wght@800&display=swap');
+
+:root {
+    /* Colors */
+        --primary: #0B132B;
+        --secondary: #3cd4eb;
+        --accent1: #243054;
+        --accent2: #ff9d2d;
+    
+        --font-light: #ffffff;
+        --font-dark: #0B132B;
+    
+        --background: #ffffff;
+        --background-alt: #e8e8e8;
+        --shadow: #0303038e;
+        --italicized: #888888;
+    /* Fonts */
+        --heading-font: 'Roboto Slab', georgia, serif;
+        --sub-font: 'Oswald', tahoma, sans-serif;
+        --paragraph-font: 'Roboto', tahoma, sans-serif;
+    }
+
+    .content {
+        background-color: var(--background);
+    }
+
+    body {
+        background-color: var(--accent1); 
+        color:black;
+        margin: 0px;
+    }
+    
+    header, footer {
+        background-color: var(--primary);
+        box-shadow: 0px 5px 10px 0px var(--shadow);
+        width: auto; height: auto;
+        margin: 0px;
+        padding: 10px 30px 10px 30px;
+        text-align: center;
+    }
+
+    main {
+        display: block;
+        padding: 8px;
+    }
+
+    h1 { /* Header */
+        color: var(--secondary);
+        font-family: var(--heading-font);
+        letter-spacing: 2px;
+    }
+    
+    h2 { /* Subheader */
+        color: var(--secondary);
+        font-family: var(--paragraph-font);
+        letter-spacing: 2px;
+    }
+    
+    h3, h4, h5, h6 { /* Section */
+        color: var(--accent1);
+        font-family: var(--heading-font);
+        letter-spacing: 1px;
+    }
+    
+    p {
+        color: var(--font-dark);
+        font-family: var(--paragraph-font);
+    }
+
+    .copy {
+        color: var(--secondary);
+    }
+
+    caption {
+        padding: 10px;
+        caption-side: bottom;
+          color: var(--primary);
+          font-size: .9rem;
+    }
+
+    table {
+        margin: 10px auto;
+        border: 4px solid var(--primary);
+        box-shadow: 0px 5px 10px 0px var(--shadow);
+        border-collapse: collapse;
+    }
+    
+    tr:first-child th {
+        background-color: var(--primary);
+        color: var(--accent2);
+        letter-spacing: 1px;
+        font-size: 1.8rem;
+    }
+    
+    th, td {
+        padding: 8px 16px;
+        border: 1px solid var(--primary);
+        font-size: 1.2rem;
+    }
+    
+    th {
+        background-color: var(--secondary);
+        color: var(--primary);
+    }
+    
+    td {
+        text-align: center;
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: var(--background-alt);
+    }
+
+/* Large Display Properties (~ 1200px+ wide) */
+@media screen and (min-width: 32.5em) {
+
+    .content {
+        max-width: 1080px;
+        min-width: 360px;
+        margin: 8px auto;
+        border-radius: 12px;
+    }
+
+    header {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    footer {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    /* Font Sizes */
+    h1 { font-size: 32px; }
+    h2, .page-footer { font-size: 18px; }
+    h3, h4, h5, h6 { font-size: 28px; }
+    li { font-size: 24px; }
+    p { font-size: 20px;}
+}
+
+/* Medium Display Properties (~ 520px-1200px wide) */
+@media screen and (min-width: 32.5em) and (max-width:75em) {
+
+    .content {
+        max-width: 760px;
+        min-width: 360px;
+        margin: 8px auto;
+        border-radius: 12px;
+    }
+    
+    header {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    footer {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    /* Font Sizes */
+    h1 { font-size: 28px; }
+    h2, .page-footer { font-size: 20px; }
+    h3, h4, h5, h6 { font-size: 26px; }
+    li { font-size: 24px; }
+    p { font-size: 18px; }
+}
+
+/* Small Display Properties (~ 320px-520px wide) */
+@media screen and (min-width: 20em) and (max-width: 32.5em) {
+
+    header, footer {
+        text-align: center;
+        border-radius: 0px;
+    }
+
+    th, td {
+        padding: 14px 20px;
+        border: 1px solid var(--primary);
+    }
+    
+    /* Font Sizes */
+    h1 { font-size: 38px; }
+    h2, .page-footer { font-size: 20px; }
+    h3, h4, h5, h6 { font-size: 24px; }
+    li { font-size: 22px; }
+    p { font-size: 18px; }
+
+    tr:first-child th {
+        font-size: 2.4rem;
+        letter-spacing: 0px;
+    }
+
+    th, td {
+        font-size: 1.3rem;
+    }
+}
