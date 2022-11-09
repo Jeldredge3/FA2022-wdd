@@ -343,7 +343,7 @@ img {
     background-color: var(--accent2);
 }
 
-.discover-1, .discover-2, .discover-3, .discover-4, .discover-5 {
+.discover-1, .discover-2, .discover-3, .discover-4, .discover-5, .discover-6 {
     background-color: var(--background);
     box-shadow: 0px 2px 5px 0px var(--shadow);
     display: grid;
