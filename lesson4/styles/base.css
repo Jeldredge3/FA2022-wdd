@@ -14,7 +14,6 @@ across all '.css' files. The file also contains default CSS properties for each 
     
     --font-light: #e6fbf7;
     --font-dark: #060e1e;
-    --font-contrast: #1e9387;
 
     --background: #ffffff;
     --background-alt: #bcede4;
@@ -423,7 +422,7 @@ img {
 }
 
 legend {
-    color: var(--font-contrast);
+    color: var(--font-dark);
     text-align: left;
     margin-left: 5%;
     padding: 8px;
