@@ -487,6 +487,10 @@ textarea {
     max-width: 100%;
 }
 
+#display-form-date {
+    display: hidden;
+}
+
 /* Join CSS Effects */
 input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
     border-left: 8px solid var(--status-green);
