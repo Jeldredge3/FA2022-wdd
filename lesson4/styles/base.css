@@ -14,6 +14,7 @@ across all '.css' files. The file also contains default CSS properties for each 
     
     --font-light: #e6fbf7;
     --font-dark: #060e1e;
+    --font-contrast: #1e9387;
 
     --background: #ffffff;
     --background-alt: #bcede4;
@@ -422,7 +423,7 @@ img {
 }
 
 legend {
-    color: var(--accent1);
+    color: var(--font-contrast);
     text-align: left;
     margin-left: 5%;
     padding: 8px;
@@ -437,6 +438,14 @@ fieldset {
 .join-1 fieldset {
     border: 2px solid var(--accent1);
     border-radius: 8px;
+}
+
+.join-1 h2, .instructions {
+    padding-left: 24px;
+}
+
+.instructions {
+    margin-bottom: 40px;
 }
 
 .join-2, .join-3 {
