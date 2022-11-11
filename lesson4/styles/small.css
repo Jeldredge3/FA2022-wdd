@@ -198,6 +198,7 @@
 
     .discover-grid img {
         padding: 0px;
+        height: auto;
     }
 
     .discover-grid img:hover {
