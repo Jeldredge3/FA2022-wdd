@@ -21,7 +21,7 @@
     /* Font Sizes */
     h1 { font-size: 32px; }
     h2 { font-size: 30px; }
-    h3 { font-size: 24px; }
+    h3, .subtitle { font-size: 24px; }
     h4, h5, h6 { font-size: 28px; }
     li { font-size: 24px; }
     p, span, div { font-size: 20px;}
