@@ -505,7 +505,7 @@ textarea {
 }
 
 #display-form-date {
-    display: hidden;
+    display: none;
 }
 
 /* Join CSS Effects */
