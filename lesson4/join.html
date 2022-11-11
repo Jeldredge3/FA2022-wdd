@@ -63,29 +63,29 @@
         <fieldset class="join-1a">
             <legend>Applicant Information</legend>
 
-            <h3>First Name<span class="required">*</span></h3>
+            <label class="subtitle">First Name<span class="required">*</span></label>
             <input type="text" id="fname" name="first-name" required>
 
-            <h3>Last Name<span class="required">*</span></h3>
+            <label class="subtitle">Last Name<span class="required">*</span></label>
             <input type="text" id="lname" name="last-name" required>
 
-            <h3>Business Position<span class="required">*</span></h3>
+            <label class="subtitle">Business Position<span class="required">*</span></label>
             <p class="input-hint">Enter your job title at your company.</p>
             <input type="text" name="position" minlength="7" pattern="^[a-zA-Z]+[a-zA-Z- ]*[a-zA-Z]$" 
             title="Entry must be atleast 7 characters in length and only contain letters A-Z, hyphens, and spaces." required>
 
-            <h3>Business Name<span class="required">*</span></h3>
+            <label class="subtitle">Business Name<span class="required">*</span></label>
             <p class="input-hint">Enter the name of your company.</p>
             <input type="text" name="company" required>
         </fieldset>
 
         <fieldset class="join-1b">
             <legend>Contact Information</legend>
-            <h3>Email<span class="required">*</span></h3>
+            <label class="subtitle">Email<span class="required">*</span></label>
             <p class="input-hint">Select a membership level from the following options.</p>
             <input type="email" name="email" title="Enter an email address." placeholder="person@email.com" required>
 
-            <h3>Phone Number<span class="required">*</span></h3>
+            <label class="subtitle">Phone Number<span class="required">*</span></label>
             <p class="input-hint">Select a membership level from the following options.</p>
             <input type="tel" name="phone" title="Enter a phone number without spaces, hyphens, or underscores." required>
         </fieldset>
@@ -93,7 +93,7 @@
 
         <fieldset class="join-2">
             <legend>Membership Level</legend>
-            <h3>Choose a Membership Level<span class="required">*</span></h3>
+            <label class="subtitle">Choose a Membership Level<span class="required">*</span></label>
             <p class="input-hint">Select a membership level from the following options.</p>
             <ul>
                 <li><input type="radio" name="membership" value="NP" id="mem-np"><label>NP Membership</label></li>
@@ -105,7 +105,7 @@
 
         <fieldset class="join-3">
             <legend>Business Description</legend>
-            <h3>Tell Us About Your Business</h3>
+            <label class="subtitle">Tell Us About Your Business</label>
             <p class="input-hint">Write a brief description of your company (510 characters or less).</p>
             <textarea rows="10" cols="50" maxlength="510"></textarea>
         </fieldset>
@@ -120,7 +120,7 @@
                 <img src="../lesson4/images/draper-commerce-100px-je2022.webp" alt="Draper Commerce Logo"
                 srcset="../lesson4/images/draper-commerce-100px-je2022.webp 1x, ../lesson4/images/draper-commerce-100px-je2022.webp 2x, ../lesson4/images/draper-commerce-400px-je2022.webp 3x">
             </picture>
-            <h3 class="footer-company">Draper Commerce</h3>
+            <label class="footer-company">Draper Commerce</label>
         </div>
         <div class="contact-info">
             <p class="physical-address">001 Berry Street, Draper, UT 84020</p>

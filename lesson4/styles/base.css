@@ -56,7 +56,7 @@ h2 { /* Subheading */
     margin: 0px;
 }
 
-h3 { /* Section */
+h3, .subtitle { /* Section */
     color: var(--secondary);
     font-family: var(--paragraph-font);
     letter-spacing: 1px;
@@ -410,15 +410,26 @@ img {
     padding: 20px;
 }
 
-.join-grid h3 {
+.subtitle {
     line-height: 28px;
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.input-hint {
+    line-height: 18px;
+    font-size: 0.9em;
+    margin-top: 6px;
+    margin-bottom: 14px;
 }
 
 .join-grid input, textarea {
     margin-top: 0px;
-    margin-bottom: 12px;
+    margin-bottom: 18px;
+}
+
+.join-grid input[type="text"], .join-grid input[type="tel"], .join-grid input[type="email"]{
+    display: block;
 }
 
 legend {
@@ -429,6 +440,7 @@ legend {
 }
 
 fieldset {
+    display: block;
     border: 2px solid var(--accent1);
     border-radius: 12px;
     padding: 10px 10px;
@@ -458,13 +470,6 @@ fieldset ul {
 
 li label {
     margin-left: 12px;
-}
-
-.input-hint {
-    line-height: 18px;
-    font-size: 0.9em;
-    margin-top: 8px;
-    margin-bottom: 8px;
 }
 
 input, textarea {
