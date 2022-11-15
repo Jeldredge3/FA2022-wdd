@@ -1,6 +1,6 @@
 // Store the resource of the JSON URL file into a variable.
 //const requestURL = '';
-import businessData from './lesson4/data/data.json' assert {type:'json'};
+//import businessData from './lesson4/data/data.json' assert {type:'json'};
 
 /* JSON file object information:
  * 'businesses' - contains a list of objects.
