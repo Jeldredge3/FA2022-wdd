@@ -273,4 +273,13 @@
     .thankyou-message, .placeholder-message {
         padding: 20px 20px;
     }
+
+    /* Directory CSS Properties */
+    .directory-grid {
+        padding: 4px 20px 4px 20px;
+    }
+
+    .directory-message {
+        padding: 20px 20px;
+    }
 }
