@@ -35,4 +35,3 @@ function displayBanner(banner) {
     }
 }
 displayBanner(banner);
-    
