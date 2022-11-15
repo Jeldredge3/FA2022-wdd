@@ -1,0 +1,94 @@
+{
+    "businesses": [
+        {
+            "name": "Zibtek",
+            "name_add": "Custom Software, Mobile Web App Development Company",
+            "address": "1111 Draper Pkwy #206",
+            "address_end": "Draper, UT 84020",
+            "phone": "801-895-2894",
+            "url": "https://www.zibtek.com/",
+            "mem_lvl": "Silver"
+        },
+        {
+            "name": "Paramount Tax & Accounting CPAS of Draper",
+            "name_add": "",
+            "address": "12481 S Fort St Ste 225",
+            "address_end": "Draper, UT 84020",
+            "phone": "801-890-4777",
+            "url": "https://paramount.tax/draper",
+            "mem_lvl": "Silver"
+        },
+        {
+            "name": "HANGAR 15 Bicycles",
+            "name_add": "",
+            "address": "762 E 12300 S",
+            "address_end": "Draper, UT 84020",
+            "phone": "801-576-8844",
+            "url": "https://www.hangar15bicycles.com/",
+            "mem_lvl": "Gold"
+        },
+        {
+            "name": "Barber Tax Services",
+            "name_add": "",
+            "address": "12660 S Fort St #101",
+            "address_end": "Draper, UT 84020",
+            "phone": "801-572-2777",
+            "url": "https://barbertaxservicellc.com/",
+            "mem_lvl": "Silver"
+        },
+        {
+            "name": "Water Pro Inc.",
+            "name_add": "A Draper Irrigation Company",
+            "address": "12421 S 800 E",
+            "address_end": "Draper, UT 84020",
+            "phone": "801-571-2232",
+            "url": "https://www.waterpro.net/",
+            "mem_lvl": "Bronze"
+        },
+        {
+            "name": "Gourmandise",
+            "name_add": "Cafe & Bakery",
+            "address": "725 E 12300 S",
+            "address_end": "Draper, UT 84020",
+            "phone": "801-571-1500",
+            "url": "https://www.gourmandise.com/",
+            "mem_lvl": "Bronze"
+        },
+        {
+            "name": "Epic Marketing",
+            "name_add": "",
+            "address": "12356 900 E #105",
+            "address_end": "Draper, UT 84020",
+            "phone": "801-505-9325",
+            "url": "https://marketingepic.com/",
+            "mem_lvl": "Gold"
+        },
+        {
+            "name": "Sweet Lake Biscuits & Limeade",
+            "name_add": "",
+            "address": "519 E 12300 S suite d",
+            "address_end": "Draper, UT 84020",
+            "phone": "801-953-1978",
+            "url": "https://www.sweetlakefresh.com/",
+            "mem_lvl": "Bronze"
+        },
+        {
+            "name": "Luxul Manufacturing",
+            "name_add": "",
+            "address": "112 W 13800 S #1st",
+            "address_end": "Draper, UT 84020",
+            "phone": "801-822-5450",
+            "url": "http://www.luxul.com/",
+            "mem_lvl": "Gold"
+        },
+        {
+            "name": "1_800 Contacts",
+            "name_add": "",
+            "address": "261 W Data Dr",
+            "address_end": "Draper, UT 84020",
+            "phone": "801-316-5000",
+            "url": "https://www.1800contacts.com/",
+            "mem_lvl": "Gold"
+        }
+    ]
+}

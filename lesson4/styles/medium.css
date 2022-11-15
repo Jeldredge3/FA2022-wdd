@@ -251,11 +251,11 @@
     }
 
     /* ThankYou CSS Properties */
-    .thankyou-grid {
+    .thankyou-grid, .placeholder-grid {
         padding: 100px 10% 120px 10%;
     }
 
-    .thankyou-message {
+    .thankyou-message, .placeholder-message {
         padding: 20px 120px;
     }
 }
