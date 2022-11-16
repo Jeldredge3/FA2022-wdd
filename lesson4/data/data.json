@@ -7,6 +7,7 @@
             "address_end": "Draper, UT 84020",
             "phone": "801-895-2894",
             "url": "https://www.zibtek.com/",
+            "logo": "../lesson4/images/businesses/logo-zibtek.jpg",
             "mem_lvl": "Silver"
         },
         {
@@ -16,6 +17,7 @@
             "address_end": "Draper, UT 84020",
             "phone": "801-890-4777",
             "url": "https://paramount.tax/draper",
+            "logo": "../lesson4/images/businesses/logo-paramounttaxaccounting.jpg",
             "mem_lvl": "Silver"
         },
         {
@@ -25,15 +27,17 @@
             "address_end": "Draper, UT 84020",
             "phone": "801-576-8844",
             "url": "https://www.hangar15bicycles.com/",
+            "logo": "../lesson4/images/businesses/logo-hangar15.jpg",
             "mem_lvl": "Gold"
         },
         {
-            "name": "Barber Tax Services",
+            "name": "Barber Tax Service",
             "name_add": "",
             "address": "12660 S Fort St #101",
             "address_end": "Draper, UT 84020",
             "phone": "801-572-2777",
             "url": "https://barbertaxservicellc.com/",
+            "logo": "../lesson4/images/businesses/logo-barbertaxservice.jpg",
             "mem_lvl": "Silver"
         },
         {
@@ -43,6 +47,7 @@
             "address_end": "Draper, UT 84020",
             "phone": "801-571-2232",
             "url": "https://www.waterpro.net/",
+            "logo": "../lesson4/images/businesses/logo-waterproinc.jpg",
             "mem_lvl": "Bronze"
         },
         {
@@ -52,6 +57,7 @@
             "address_end": "Draper, UT 84020",
             "phone": "801-571-1500",
             "url": "https://www.gourmandise.com/",
+            "logo": "../lesson4/images/businesses/logo-gourmandise.jpg",
             "mem_lvl": "Bronze"
         },
         {
@@ -61,6 +67,7 @@
             "address_end": "Draper, UT 84020",
             "phone": "801-505-9325",
             "url": "https://marketingepic.com/",
+            "logo": "../lesson4/images/businesses/logo-epic.jpg",
             "mem_lvl": "Gold"
         },
         {
@@ -70,6 +77,7 @@
             "address_end": "Draper, UT 84020",
             "phone": "801-953-1978",
             "url": "https://www.sweetlakefresh.com/",
+            "logo": "../lesson4/images/businesses/logo-sweetlake.jpg",
             "mem_lvl": "Bronze"
         },
         {
@@ -79,6 +87,7 @@
             "address_end": "Draper, UT 84020",
             "phone": "801-822-5450",
             "url": "http://www.luxul.com/",
+            "logo": "../lesson4/images/businesses/logo-luxul.jpg",
             "mem_lvl": "Gold"
         },
         {
@@ -88,6 +97,7 @@
             "address_end": "Draper, UT 84020",
             "phone": "801-316-5000",
             "url": "https://www.1800contacts.com/",
+            "logo": "../lesson4/images/businesses/logo-1800contacts.jpg",
             "mem_lvl": "Gold"
         }
     ]
