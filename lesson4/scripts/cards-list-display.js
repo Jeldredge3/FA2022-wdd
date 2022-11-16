@@ -69,6 +69,8 @@ fetch(requestURL)
     image.setAttribute('src', business.logo);
     image.setAttribute('alt', 'Logo of ');
     image.setAttribute('loading', 'lazy');
+    image.setAttribute('width', '300');
+    image.setAttribute('height', '200');
 
     // Extra: Add classes to the elements to help with stylizing.
     card.classList.add("card");
