@@ -261,7 +261,32 @@
     }
     
     .directory-message {
-        padding: 60px 20% 80px 20%;
+        margin: 20px 0px;
+        padding: 20px 0px;
+        
+        display: grid;
+        grid-template-columns: 160px 1fr 160px;
+        grid-template-rows: 1fr;
     }
 
+    .directory-message h2 {
+        grid-column: 2/3; grid-row: 1/2;
+        margin: auto;
+    }
+
+    .view-buttons {
+        grid-column: 3/4; grid-row: 1/2;
+        margin: auto;
+    }
+
+    .view-list .card {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .view-list .card-titles {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }

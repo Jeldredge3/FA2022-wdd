@@ -280,6 +280,30 @@
     }
 
     .directory-message {
-        padding: 20px 20px;
+        margin: 20px 0px;
+        padding: 20px;
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
+
+    .directory-message h2 {
+        grid-column: 1/2; grid-row: 1/2;
+        margin: auto;
+    }
+
+    .view-buttons {
+        grid-column: 1/2; grid-row: 2/3;
+        margin: auto;
+    }
+
+    .view-list .card {
+        display: block;
+    }
+
+    .view-list .card-logo, .view-list .card-subtitle {
+        display: none;
+    }
+
 }

@@ -31,19 +31,39 @@ fetch(requestURL)
     let card = document.createElement('section');
     let image = document.createElement('img');
     let h2 = document.createElement('h2');
+    let sh = document.createElement('p');
 
-    let div = document.createElement('div');
+    let div_0 = document.createElement('div');
+    let div_1 = document.createElement('div');
+    let div_2 = document.createElement('div');
+    let div_3 = document.createElement('div');
+    let div_4 = document.createElement('div');
+    let hr = document.createElement('hr');
+
+    let h3_1 = document.createElement('h3');
+    let h3_2 = document.createElement('h3');
+    let h3_3 = document.createElement('h3');
+    let h3_4 = document.createElement('h3');
+
     let par1 = document.createElement('p');
     let par2 = document.createElement('p');
-    let par3 = document.createElement('p');
+    let par3 = document.createElement('a');
     let par4 = document.createElement('p');
 
     // Change the textContent property of the h2 element to contain the prophet's full name
-    h2.textContent = business.name + ' ' + business.name_add;
+    h2.textContent = business.name;
+    sh.textContent = business.name_add;
+    h3_1.textContent = "Address: "
+    h3_2.textContent = "Phone Number: "
+    h3_3.textContent = "Website URL: "
+    h3_4.textContent = "Membership Level: "
     par1.textContent = business.address + ', ' + business.address_end;
     par2.textContent = business.phone;
     par3.textContent = business.url;
     par4.textContent = business.mem_lvl;
+
+    // Build the href attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
+    par3.setAttribute('href', business.url);
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     image.setAttribute('src', business.logo);
@@ -51,22 +71,46 @@ fetch(requestURL)
     image.setAttribute('loading', 'lazy');
 
     // Extra: Add classes to the elements to help with stylizing.
-    image.classList.add("business-logo");
     card.classList.add("card");
-
+    image.classList.add("card-logo");
     h2.classList.add("card-title");
-    par1.classList.add("text-1");
-    par2.classList.add("text-2");
-    par3.classList.add("text-3");
-    par4.classList.add("text-4");
+    sh.classList.add("card-subtitle");
+
+    h3_1.classList.add("card-description");
+    h3_2.classList.add("card-description");
+    h3_3.classList.add("card-description");
+    h3_4.classList.add("card-description");
+
+    par1.classList.add("card-address");
+    par2.classList.add("card-phone");
+    par3.classList.add("card-website");
+    par4.classList.add("card-membership");
+
+    div_0.classList.add("card-titles");
 
     // Add/append the section(card) with the h2 element and portrait.
     card.appendChild(image);
-    card.appendChild(h2);
-    card.appendChild(par1);
-    card.appendChild(par2);
-    card.appendChild(par3);
-    card.appendChild(par4);
+
+    div_0.appendChild(h2);
+    div_0.appendChild(sh);
+    div_0.appendChild(hr);
+    card.appendChild(div_0);
+
+    div_1.appendChild(h3_1);
+    div_1.appendChild(par1);
+    card.appendChild(div_1);
+
+    div_2.appendChild(h3_2);
+    div_2.appendChild(par2);
+    card.appendChild(div_2);
+
+    div_3.appendChild(h3_3);
+    div_3.appendChild(par3);
+    card.appendChild(div_3);
+
+    div_4.appendChild(h3_4);
+    div_4.appendChild(par4);
+    card.appendChild(div_4);
 
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div#directory-area').appendChild(card);
@@ -81,10 +125,14 @@ cardButton.addEventListener("click", viewCards);
 listButton.addEventListener("click", viewList);
 
 function viewCards() {
+  cardButton.classList.add("button-selected");
 	display.classList.add("view-cards");
+  listButton.classList.remove("button-selected");
 	display.classList.remove("view-list");
 }
 function viewList() {
+  listButton.classList.add("button-selected");
 	display.classList.add("view-list");
+  cardButton.classList.remove("button-selected");
 	display.classList.remove("view-cards");
 }
