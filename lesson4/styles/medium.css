@@ -261,10 +261,39 @@
 
     /* Directory CSS Properties */
     .directory-grid {
-        padding: 4px 10% 4px 10%;
+        padding: 4px 10%;
     }
 
     .directory-message {
-        padding: 20px 120px;
+        margin: 20px 0px;
+        padding: 20px 0px 20px 20px;
+        
+        display: grid;
+        grid-template-columns: 1fr 160px;
+        grid-template-rows: 1fr;
+    }
+
+    .directory-message h2 {
+        grid-column: 1/2; grid-row: 1/2;
+        margin: auto;
+    }
+
+    .view-buttons {
+        grid-column: 2/3; grid-row: 1/2;
+        margin: auto;
+    }
+
+    .view-list .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr auto auto;
+    }
+
+    .view-list .card-title, .view-list .card-subtitle {
+        display: none;
+    }
+
+    .view-list .card-titles {
+        padding: 0px;
     }
 }

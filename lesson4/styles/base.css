@@ -554,19 +554,28 @@ input:focus, textarea:focus {
     margin: 0px;
 }
 
-.directory-message h2 {
-    text-align: center;
-}
-
-#directory-area {
-    padding: 20px;
-}
-
 #directory-area .card {
     padding: 12px 20px 12px 20px;
 }
 
-.view-button {
+.card-title {
+    color: var(--secondary);
+    font-family: var(--paragraph-font);
+    font-size: 28px;
+    text-align: left;
+}
+.card-subtitle {
+    color: var(--secondary);
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+}
+.card-description {
+    color: var(--secondary);
+    font-family: var(--heading-font);
+    font-size: 20px;
+}
+
+.view-buttons button {
     background-color: var(--background);
     color: var(--secondary);
     box-shadow: 0px 2px 5px 0px var(--shadow);
@@ -577,26 +586,49 @@ input:focus, textarea:focus {
 
     width: 60px; height: auto;
     padding: 4px;
-    margin-top: 8px;
+    margin: 0px;
 }
-.view-button:hover {
-    background-color: var(--secondary);
-    color: var(--primary);
+
+.view-buttons button:hover {
+    background-color: var(--accent1);
+    color: var(--background);
     box-shadow: none;
 }
 
-.view-button i {
+.view-buttons button i {
     color: var(--secondary);
 }
-.view-button:hover i{
-    color: var(--primary);
+.view-buttons button:hover i {
+    color: var(--background);
+}
+.button-selected {
+    background-color: var(--accent1);
 }
 
 .view-cards {
     display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    column-gap: 20px; row-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(356px, 1fr));
+    column-gap: 60px; row-gap: 30px;
 	align-items: center;
+}
+
+.view-cards .card {
+    display: inline-block;
+    width: 356px; height: 770px;
+    margin: 20px auto;
+}
+
+.view-cards .card-title {
+    margin-top: 12px;
+}
+
+.view-cards .card-description {
+    margin-top: 48px;
+    line-height: 0px;
+}
+
+.view-cards .card-logo {
+    width: 100%; height: auto;
 }
 
 .view-list {
@@ -604,20 +636,36 @@ input:focus, textarea:focus {
 	flex-direction: column;
 }
 
-.view-cards .card{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto auto;
-    width: 300px; height: 600px;
-    margin: auto;
-    border: 4px solid red;
-}
-
-.view-list .card{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+.view-list .card {
     width: auto; height: auto;
     margin: 0px;
-    border: 4px solid blue;
+}
+
+.view-list hr {
+    display: none;
+}
+
+.view-list .card-title, .view-list .card-description  {
+    margin-bottom: 12px;
+}
+
+.view-list .card-subtitle, .view-list p, .view-list a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.view-list .card-logo {
+    width: 200px;
+}
+
+.view-list div {
+    padding: 12px;
+}
+
+.view-list .card:nth-child(even) {
+    background-color: var(--accent2);
+}
+
+.view-list .card:last-child {
+    margin-bottom: 20px;
 }
