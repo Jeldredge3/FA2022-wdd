@@ -62,12 +62,13 @@ fetch(requestURL)
     par3.textContent = business.url;
     par4.textContent = business.mem_lvl;
 
-    // Build the href attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
+    // Build the href attribute for url links.
     par3.setAttribute('href', business.url);
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     image.setAttribute('src', business.logo);
-    image.setAttribute('alt', 'Logo of ');
+    //image.setAttribute('src', "../lesson4/images/placeholder-300x200px.jpg")
+    image.setAttribute('alt', 'Logo of ' + business.name);
     image.setAttribute('loading', 'lazy');
     image.setAttribute('width', '300');
     image.setAttribute('height', '200');
