@@ -67,9 +67,9 @@ fetch(requestURL)
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     image.setAttribute('src', business.logo);
-    //image.setAttribute('src', "../lesson4/images/placeholder-300x200px.jpg")
+    //HIDE//image.setAttribute('src', "../lesson4/images/placeholder-300x200px.jpg")
     image.setAttribute('alt', 'Logo of ' + business.name);
-    image.setAttribute('loading', 'lazy');
+    //HIDE//image.setAttribute('loading', 'lazy');
     image.setAttribute('width', '300');
     image.setAttribute('height', '200');
 
