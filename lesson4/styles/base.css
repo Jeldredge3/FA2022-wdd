@@ -595,10 +595,16 @@ input:focus, textarea:focus {
     box-shadow: none;
 }
 
+.view-buttons p {
+    line-height: 0px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
 .view-buttons button i {
     color: var(--secondary);
 }
-.view-buttons button:hover i {
+.view-buttons button:hover i, .view-buttons button:hover p {
     color: var(--background);
 }
 .button-selected {
@@ -655,7 +661,7 @@ input:focus, textarea:focus {
 }
 
 .view-list .card-logo {
-    width: 200px;
+    width: 200px; height: 134px;
 }
 
 .view-list div {
