@@ -669,3 +669,7 @@ input:focus, textarea:focus {
 .view-list .card:last-child {
     margin-bottom: 20px;
 }
+
+.temp {
+    display: none;
+}
