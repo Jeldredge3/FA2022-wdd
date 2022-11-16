@@ -10,6 +10,7 @@ const requestURL = 'https://jeldredge3.github.io/wdd230/lesson4/data/data.json';
  * 'address_end' - contains the city, state, and zipcode of the address.
  * 'phone' - holds the company's phone number.
  * 'url' - holds the company's web address.
+ * 'logo' - contains a 300x200px image of the company's logo.
  * 'mem_lvl' - holds the current membership level of the company. 
  */
 
@@ -25,10 +26,10 @@ fetch(requestURL)
     varObj.forEach(displayEachObj); // Call the forEach() method which will loop through each record to be processed.
   });
 
-  function displayEachObj(buisiness) {
+  function displayEachObj(business) {
     // Create elements to add to the document
     let card = document.createElement('section');
-    //let image = document.createElement('img');
+    let image = document.createElement('img');
     let h2 = document.createElement('h2');
 
     let div = document.createElement('div');
@@ -38,22 +39,21 @@ fetch(requestURL)
     let par4 = document.createElement('p');
 
     // Change the textContent property of the h2 element to contain the prophet's full name
-    h2.textContent = buisiness.name + ' ' + buisiness.name_add;
-    par1.textContent = buisiness.address + ', ' + buisiness.address_end;
-    par2.textContent = buisiness.phone;
-    par3.textContent = buisiness.url;
-    par4.textContent = buisiness.mem_lvl;
+    h2.textContent = business.name + ' ' + business.name_add;
+    par1.textContent = business.address + ', ' + business.address_end;
+    par2.textContent = business.phone;
+    par3.textContent = business.url;
+    par4.textContent = business.mem_lvl;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-    /*
-    portrait.setAttribute('src', business.imageurl);
-    portrait.setAttribute('alt', 'Logo of ' + business.name);
-    portrait.setAttribute('loading', 'lazy');
-    */
+    image.setAttribute('src', business.logo);
+    image.setAttribute('alt', 'Logo of ');
+    image.setAttribute('loading', 'lazy');
 
     // Extra: Add classes to the elements to help with stylizing.
+    image.classList.add("business-logo");
     card.classList.add("card");
-    //image.classList.add("business-logo");
+
     h2.classList.add("card-title");
     par1.classList.add("text-1");
     par2.classList.add("text-2");
@@ -61,8 +61,8 @@ fetch(requestURL)
     par4.classList.add("text-4");
 
     // Add/append the section(card) with the h2 element and portrait.
+    card.appendChild(image);
     card.appendChild(h2);
-    //card.appendChild(image);
     card.appendChild(par1);
     card.appendChild(par2);
     card.appendChild(par3);
