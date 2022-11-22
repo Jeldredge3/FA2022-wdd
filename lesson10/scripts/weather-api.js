@@ -1,0 +1,37 @@
+// create a variable to store the URL
+const url = 'http://api.openweathermap.org/data/2.5/weather?q=Fairbanks&APPID=50658f3950af3ac334e2b387a6c80e76&units=imperial';
+
+// select HTML elements in the document
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+
+// use an asynchronous fetch() function to request the weather API & check if it is valid
+async function apiFetch() {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // this is for testing the call
+        displayResults(data);
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+  apiFetch();
+
+  // displays the results from the fetched data, toFixed() displays no decimal places.
+  function  displayResults(weatherData) {
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+  
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`; // weather icons are stored in an array[]
+    const desc = weatherData.weather[0].description;
+    const desc_cap = desc.charAt(0).toUpperCase() + desc.slice(1); // capitalize the first letter in the string
+
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc_cap);
+    captionDesc.textContent = desc_cap;
+  }

@@ -1,0 +1,191 @@
+/* Import Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&family=Roboto+Slab:wght@800&display=swap');
+
+:root {
+    /* Colors */
+        --primary: #0B132B;
+        --secondary: #3cd4eb;
+        --accent1: #243054;
+        --accent2: #ff9d2d;
+    
+        --font-light: #ffffff;
+        --font-dark: #0B132B;
+    
+        --background: #ffffff;
+        --background-alt: #e8e8e8;
+        --shadow: #0303038e;
+        --italicized: #888888;
+    /* Fonts */
+        --heading-font: 'Roboto Slab', georgia, serif;
+        --sub-font: 'Oswald', tahoma, sans-serif;
+        --paragraph-font: 'Roboto', tahoma, sans-serif;
+    }
+
+    .content {
+        background-color: var(--background);
+    }
+
+    body {
+        background-color: var(--accent1); 
+        color:black;
+        margin: 0px;
+    }
+    
+    header, footer {
+        background-color: var(--primary);
+        box-shadow: 0px 5px 10px 0px var(--shadow);
+        width: auto; height: auto;
+        margin: 0px;
+        padding: 10px 30px 10px 30px;
+        text-align: center;
+    }
+
+    main {
+        display: block;
+        padding: 8px;
+    }
+
+    .grid {
+        display: block;
+        padding: 20px;
+    }
+    
+    .temperature {
+        text-align: center;
+    }
+
+    .weather {
+        background-color: var(--background);
+        box-shadow: 0px 5px 10px 0px var(--shadow);
+        text-align: center;
+        margin: 0 auto;
+        border: 4px solid var(--primary);
+        border-radius: 4px;
+        padding: 12px;
+        width: 250px; height: auto;
+    }
+
+    .weather h2 {
+        color: var(--primary);
+        font-size: 18px;
+    }
+
+    #weather-icon {
+        background-color: var(--primary);
+        box-shadow: 0px 5px 10px 0px var(--shadow);
+        margin-bottom: 12px;
+        border: 4px solid var(--primary);
+        border-radius: 4px;
+        width: auto; height: auto;
+        
+    }
+
+    figure figcaption {
+        color: var(--primary);
+        font-family: var(--heading-font);
+        font-size: 24px;
+        margin: 0;
+        line-height: 16px;
+    }
+
+    h1 { /* Header */
+        color: var(--secondary);
+        font-family: var(--heading-font);
+        letter-spacing: 2px;
+    }
+    
+    h2 { /* Subheader */
+        color: var(--accent1);
+        font-family: var(--paragraph-font);
+        letter-spacing: 2px;
+    }
+    
+    h3, h4, h5, h6 { /* Section */
+        color: var(--accent1);
+        font-family: var(--heading-font);
+        letter-spacing: 1px;
+    }
+    
+    p {
+        color: var(--font-dark);
+        font-family: var(--paragraph-font);
+    }
+
+    .copy, .credit {
+        color: var(--secondary);
+    }
+
+/* Large Display Properties (~ 1200px+ wide) */
+@media screen and (min-width: 32.5em) {
+
+    .content {
+        max-width: 1080px;
+        min-width: 360px;
+        margin: 8px auto;
+        border-radius: 12px;
+    }
+
+    header {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    footer {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    /* Font Sizes */
+    h1 { font-size: 32px; }
+    h2, .page-footer { font-size: 18px; }
+    h3, h4, h5, h6 { font-size: 28px; }
+    li { font-size: 24px; }
+    p { font-size: 20px;}
+    figcaption, .credit { font-size: 16px;} 
+}
+
+/* Medium Display Properties (~ 520px-1200px wide) */
+@media screen and (min-width: 32.5em) and (max-width:75em) {
+
+    .content {
+        max-width: 760px;
+        min-width: 360px;
+        margin: 8px auto;
+        border-radius: 12px;
+    }
+    
+    header {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    footer {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    /* Font Sizes */
+    h1 { font-size: 28px; }
+    h2, .page-footer { font-size: 20px; }
+    h3, h4, h5, h6 { font-size: 26px; }
+    li { font-size: 24px; }
+    p { font-size: 18px; }
+    figcaption, .credit { font-size: 16px;} 
+}
+
+/* Small Display Properties (~ 320px-520px wide) */
+@media screen and (min-width: 20em) and (max-width: 32.5em) {
+
+    header, footer {
+        text-align: center;
+        border-radius: 0px;
+    }
+
+    /* Font Sizes */
+    h1 { font-size: 34px; }
+    h2, .page-footer { font-size: 20px; }
+    h3, h4, h5, h6 { font-size: 24px; }
+    li { font-size: 22px; }
+    p { font-size: 18px; }
+    figcaption, .credit { font-size: 16px;} 
+}
