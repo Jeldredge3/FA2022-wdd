@@ -1,5 +1,5 @@
 // create a variable to store the URL
-const url = 'http://api.openweathermap.org/data/2.5/weather?q=Fairbanks&APPID=50658f3950af3ac334e2b387a6c80e76&units=imperial';
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&APPID=50658f3950af3ac334e2b387a6c80e76&units=imperial';
 
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
