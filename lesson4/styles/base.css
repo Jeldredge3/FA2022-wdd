@@ -75,7 +75,7 @@ li {
     line-height: 1.6em;
 }
 
-p, div, figcaption {
+p, div, figcaption, button b {
     color: var(--font-dark);
     font-family: var(--paragraph-font);
 }
@@ -595,16 +595,10 @@ input:focus, textarea:focus {
     box-shadow: none;
 }
 
-.view-buttons p {
-    line-height: 0px;
-    margin-top: 10px;
-    margin-bottom: 12px;
-}
-
 .view-buttons button i {
     color: var(--secondary);
 }
-.view-buttons button:hover i, .view-buttons button:hover p {
+.view-buttons button:hover i, .view-buttons button:hover b {
     color: var(--background);
 }
 .button-selected {

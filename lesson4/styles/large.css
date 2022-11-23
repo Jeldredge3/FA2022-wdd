@@ -24,7 +24,7 @@
     h3, .subtitle { font-size: 24px; }
     h4, h5, h6 { font-size: 28px; }
     li { font-size: 24px; }
-    p, span, div { font-size: 20px;}
+    p, span, div, button b { font-size: 20px;}
     footer, #banner { font-size: 20px; }
 
     /* Navigation */
