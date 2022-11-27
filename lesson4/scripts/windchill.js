@@ -76,7 +76,41 @@ function checkIcon(icon) {
      * 13n = "snow"
      * 50n = "mist"
      */
+
     switch(icon) {
+        
+        /* Day Icons */
+
+        case "01d": // clear
+            weather_icon.src = "../lesson4/images/i-sunny-64px.webp";
+            break;
+        case "02d": // few clouds
+            weather_icon.src = "../lesson4/images/i-part-cloudy-64px.webp";
+            break;
+        case "03d": // scattered clouds
+            weather_icon.src = "../lesson4/images/i-cloudy-64px.webp";
+            break;
+        case "04d": // broken clouds
+            weather_icon.src = "../lesson4/images/i-cloudy-64px.webp";
+            break;
+        case "09d": // shower rain
+            weather_icon.src = "../lesson4/images/i-rainy-64px.webp";
+            break;
+        case "10d": // rain
+            weather_icon.src = "../lesson4/images/i-rainy-64px.webp";
+            break;
+        case "11d": // thunderstorm
+            weather_icon.src = "../lesson4/images/i-stormy-64px.webp";
+            break;
+        case "13d": // snow
+            weather_icon.src = "../lesson4/images/i-snowy-64px.webp";
+            break;
+        case "50d": // mist
+            weather_icon.src = "../lesson4/images/i-hazy-64px.webp";
+            break;
+
+        /* Night Icons */
+
         case "01n": // clear
             weather_icon.src = "../lesson4/images/i-sunny-64px.webp";
             break;
