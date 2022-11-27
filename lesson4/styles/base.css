@@ -232,6 +232,10 @@ img {
     color: var(--accent1);
 }
 
+.credit {
+    color: var(--font-light);
+}
+
 /* Index CSS Properties */
 .index-grid {
     background-color: var(--accent2);
