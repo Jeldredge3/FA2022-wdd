@@ -90,6 +90,10 @@ i {
     color: var(--accent1);
 }
 
+strong {
+    letter-spacing: 1px;
+}
+
 hr {
     border: 2px solid var(--accent1);
 }
@@ -683,4 +687,23 @@ input:focus, textarea:focus {
 
 .temp {
     display: none;
+}
+
+/* Contact CSS Properties */
+.contact-grid {
+    background-color: var(--accent2);
+}
+
+.contact-message, .contact-form {
+    background-color: var(--background);
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+    margin: 20px 0px;
+}
+
+.contact {
+    padding-left: 24px;
+}
+.contact-grid label {
+    display: block;
+    margin-top: 20px;
 }

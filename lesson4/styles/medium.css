@@ -298,4 +298,18 @@
     .view-list .card-titles {
         padding: 0px;
     }
+
+    /* Contact CSS Properties */
+    .contact-grid {
+        padding: 4px 10%;
+    }
+
+    .contact-message {
+        padding: 20px 20px;
+    }
+
+    .contact-form {
+        padding: 20px 20px;
+    }
+
 }
