@@ -21,8 +21,8 @@ const spotlight3 = document.querySelector('.spotlight-3');
 // create lists for businesses to be sorted through.
 let npList = [];
 let bronzeList = [];
-let silverList = [];
-let goldList = [];
+let silverGoldList = [];
+
 // create empty variables for each spotlight.
 var choice1 = {name: '', name_add: '', address: '', address_end: '', phone:'', url:'', logo:'images/placeholder-300x200px', mem_lvl: 'NP'};
 var choice2 = {name: '', name_add: '', address: '', address_end: '', phone:'', url:'', logo:'images/placeholder-300x200px', mem_lvl: 'NP'};
@@ -36,7 +36,7 @@ fetch(requestURL)
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const varObj = jsonObject['businesses']; // Store the results into an array since that data source is an array.
     varObj.forEach(sortMembers); // Call the forEach() method which will loop through each record to be processed.
-    selectThreeSpotlights(goldList); // select 3 spotlight businesses to feature from the Gold Members list.
+    selectThreeSpotlights(silverGoldList); // select 3 spotlight businesses to feature from the Gold Members list.
     displaySpotlights(choice1, choice2, choice3);
   });
 
@@ -50,10 +50,10 @@ fetch(requestURL)
             bronzeList.push(business);
             break;
         case ('Silver'):
-            silverList.push(business);
+            silverGoldList.push(business);
             break;
         case ('Gold'):
-            goldList.push(business);
+            silverGoldList.push(business);
             break;
     }
   }
@@ -69,7 +69,7 @@ fetch(requestURL)
     } else if (list.length = 1) {
         choice1 = list[0];
     }
-    console.log('Spotlight1: ' + choice1.name + '\nSpotlight2: ' + choice2.name + '\nSpotlight3: ' + choice3.name);
+    //console.log('Spotlight1: ' + choice1.name + '\nSpotlight2: ' + choice2.name + '\nSpotlight3: ' + choice3.name);
     }
 
   function displaySpotlights(choice1, choice2, choice3) {
@@ -143,7 +143,4 @@ fetch(requestURL)
     spotlight3.appendChild(image3);
     spotlight3.appendChild(link3);
     spotlight3.appendChild(par3);
-
-    // Add/append the existing HTML div with the cards class with the section(card)
-    //document.querySelector('div#directory-area').appendChild(card);
   }

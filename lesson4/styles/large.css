@@ -291,4 +291,17 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
+    /* Contact CSS Properties */
+    .contact-grid {
+        padding: 4px 20%;
+    }
+    
+    .contact-message {
+        padding: 20px 60px;
+    }
+
+    .contact-form {
+        padding: 20px 20px;
+    }
 }
